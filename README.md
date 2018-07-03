@@ -24,6 +24,9 @@ When experiencing issues, it's helpful to first [visit the Status page](https://
 
 To install the game again, visit [corporateclash.net/play](https://corporateclash.net/play)
 
+![Mac](https://i.imgur.com/bo61GBx.png) To solve this problem on Mac:
+- _No support is available for this OS yet. Check back soon!_
+
 ## Launcher
 
 #### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
@@ -38,6 +41,9 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 - ![Note](https://i.imgur.com/eifXPBC.png) Ensure that you have the latest version of the game, and ensure that you have the C++ VS2015 Redistributable Packages.
 - ![Note](https://i.imgur.com/eifXPBC.png) If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
+![Mac](https://i.imgur.com/bo61GBx.png) To solve this problem on Mac:
+- _No support is available for this OS yet. Check back soon!_
+
 #### **Q:** My launcher isn't opening at all, and isn't displaying any errors! What gives?
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) To solve this problem on Windows:
@@ -47,6 +53,9 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 - If none of the above work, download and run the uninstall utility to completely remove all remaining CC files by clicking [here](https://drive.google.com/file/d/1aqk_CyY4NRV2W8umeUOBuL_PZgpj2llS/view?usp=sharing) and repeat Step 3.
 - If none of the above work, try restarting your computer. 
 - If none of the above work, try asking for further assistance in `#technology` with your computer information.
+
+![Mac](https://i.imgur.com/bo61GBx.png) To solve this problem on Mac:
+- _No support is available for this OS yet. Check back soon!_
 
 #### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
 
@@ -61,7 +70,11 @@ Two instances of the launcher may be running simutaneously, and it cannot update
 - ![Note](https://i.imgur.com/eifXPBC.png) If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
 ![Mac](https://i.imgur.com/bo61GBx.png) To solve this problem on Mac:
-- _No support is available for this OS yet. Check back soon!_
+- Open `Activity Monitor`
+- End all processes of `Clash Launcher`
+- End all processes of `ccbstp`
+- If the issue persists, restart your computer.
+- If the issue persists, reinstall the game.
 
 ## Gameplay
 
