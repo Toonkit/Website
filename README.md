@@ -40,12 +40,12 @@ To solve this problem on Windows:
 
 #### **Q:** My launcher isn't opening at all, and isn't displaying any errors! What gives?
 
-To solve this problem on Windows:
+To solve this problem:
 - Run the Corporate Clash uninstaller to remove the game files
-- Delete the Corporate Clash folder in `C:\Program Files (x86)` (if it's present)
-- Reinstall the game (re-download from [corporateclash.net/play](https://corporateclash.net/play)
-- If none of the above work, try restarting your computer.
-- If none of the above work, try asking for further assistance in `#technology` with your computer information.
+- Delete the Corporate Clash folder in C:\Program Files (x86) if it's still there
+- Reinstall the game
+
+If this doesn't work, please tell us!
 
 #### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
 
@@ -67,3 +67,9 @@ To solve this problem on Mac:
 #### **Q:** My game is missing some files, how do I fix this?
 
 First, make sure that the version you are playing on is the most up-to-date version: the launcher automatically serves and handles updates. To update your game, you may close and reopen the launcher. If the issue persists, you must uninstall and then reinstall the game. This occurs when components might be missing in your game files, such as textures and models not appearing.
+
+#### **Q:** My game says that my internet connection to the servers has been broken, but my internet's working fine! What's going wrong?
+
+- Check #announcements or [visit the Status page](https://status.corporateclash.net/) to see if there is currently a server outage
+- If there is, you'll have to wait for the Corporate Clash team to fix whatever issues they are encountering
+- If there is no server outage and other people are still able to play, chances are the servers are overloaded and crashes will be very common until the number of current players/logins has dropped. Please note the only thing you can do in this situation is to keep trying or wait for the servers to be less stressed.
