@@ -7,7 +7,7 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
 ## Technical
 
 #### **Q:** What are C++ VS2015 Redistributable Packages? Where do I install Visual Studio Redistributable Packages?
-**A:** 
+ 
 >Visual C++ Redistributable Packages install runtime components of Visual C++ Libraries on a computer that does not have Visual C++ installed. The libraries are required to run applications that are developed by using the corresponding version of Visual C++. 
 
 This is required to play Corporate Clash. These packages can be downloaded on [Microsoft's official website](https://www.microsoft.com/en-us/download/details.aspx?id=48145). Scroll down to `Visual Studio 2015` and follow the instructions.
@@ -20,4 +20,6 @@ This is required to play Corporate Clash. These packages can be downloaded on [M
 
 ## Gameplay
 
-## 
+#### **Q:** My game is missing some files, how do I fix this?
+
+In order to repair a faulty installation of Toontown: Corporate Clash, you must uninstall and then reinstall the game. The launcher also may periodically update your game with the files that you were missing previously.
