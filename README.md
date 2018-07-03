@@ -1,6 +1,6 @@
 # Toontown: Corporate Clash Technical Issues FAQ
 
-Read this before posting about your issue in the `#technology`. The purpose of this document is to provide a central hub for common issues relating to Toontown: Corporate Clash, and how to solve them. To submit a solution, please create a [pull request](https://github.com/Palmidence/Toontown/pulls) by editing the appropriate text with a description of how to fix the issue.
+Read this before posting about your issue in `#technology`. The purpose of this document is to provide a central hub for common issues relating to Toontown: Corporate Clash, and how to solve them. To submit a solution, please create a [pull request](https://github.com/Palmidence/Toontown/pulls) by editing the appropriate text with a description of how to fix the issue.
 
 You may submit both questions and issues: for **gameplay-related issues**, please make sure that the issue is reproducable by other users before submitting a solution, and that it isn't too obscure.
 
@@ -90,6 +90,6 @@ First, make sure that the version you are playing on is the most up-to-date vers
 
 #### **Q:** My game says that my internet connection to the servers has been broken, but my internet's working fine! What's going wrong?
 
-- Check #announcements or [visit the Status page](https://status.corporateclash.net/) to see if there is currently a server outage
-- If there is, you'll have to wait for the Corporate Clash team to fix whatever issues they are encountering
+- Check `#announcements` or [visit the Status page](https://status.corporateclash.net/) to see if there is currently a server outage.
+- If there is, you'll have to wait for the Corporate Clash team to fix whatever issues they are encountering.
 - If there is no server outage and other people are still able to play, chances are the servers are overloaded and crashes will be very common until the number of current players/logins has dropped. Please note the only thing you can do in this situation is to keep trying or wait for the servers to be less stressed.
