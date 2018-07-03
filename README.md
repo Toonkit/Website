@@ -43,7 +43,7 @@ To solve this problem on Windows:
 To solve this problem:
 - Run the Corporate Clash uninstaller to remove the game files
 - Delete the Corporate Clash folder in C:\Program Files (x86) if it's still there
-- Reinstall the game
+- Reinstall the game by going [here](https://corporateclash.net/play)
 
 If this doesn't work, please tell us!
 
