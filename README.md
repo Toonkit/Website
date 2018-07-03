@@ -4,6 +4,8 @@ Read this before posting about your issue in the `#technology`. The purpose of t
 
 You may submit both questions and issues: for **gameplay-related issues**, please make sure that the issue is reproducable by other users before submitting a solution, and that it isn't too obscure.
 
+>**Credits:** Vice#4812, Bin#7773
+
 ## Technical
 
 #### **Q:** What are C++ VS2015 Redistributable Packages? Where do I install Visual Studio Redistributable Packages? How do I fix `MVSCP140.DLL / RUNTIME.DLL were not found`?
