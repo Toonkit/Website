@@ -34,7 +34,7 @@ To solve this problem on Windows:
 - If the issue persists, reinstall the game.
 
 To solve this problem on Mac:
-_No support is available for this OS yet. Check back soon!_
+- _No support is available for this OS yet. Check back soon!_
 
 ## Gameplay
 
