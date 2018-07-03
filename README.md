@@ -16,6 +16,12 @@ This is required to play Corporate Clash. These packages can be downloaded on [M
 
 When experiencing issues, it's helpful to first [visit the Status page](https://status.corporateclash.net/). This describes if the services are experiencing any outages, or are running as expected. The services it reports on are the Main Game, the Website, and the Login API.
 
+#### **Q:** I tried to reinstall Corporate Clash and it isn't working, how do I fix this?
+
+Before you try to reinstall the game, delete all of the old files. Corporate Clash's files can be found in the `C:\Program Files (x86)\Corporate Clash` directory on Windows. A broken, outdated version may be conflicting with the new installation if the files are not deleted, thus causing issues when trying to reinstall the game.
+
+To install the game again, visit [corporateclash.net/play](https://corporateclash.net/play)
+
 ## Launcher
 
 #### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
