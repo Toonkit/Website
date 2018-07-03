@@ -12,6 +12,10 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
 
 This is required to play Corporate Clash. These packages can be downloaded on [Microsoft's official website](https://www.microsoft.com/en-us/download/details.aspx?id=48145). Scroll down to `Visual Studio 2015` and follow the instructions.
 
+#### **Q:** How do I check the status of Corporate Clash?
+
+When experiencing issues, it's helpful to first [visit the Status page](https://status.corporateclash.net/). This describes if the services are experiencing any outages, or are running as expected. The services it reports on are the Main Game, the Website, and the Login API.
+
 ## Launcher
 
 #### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
