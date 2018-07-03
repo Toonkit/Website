@@ -22,6 +22,20 @@ When experiencing issues, it's helpful to first [visit the Status page](https://
 
 **A:** **Nothing here!** Submit a solution by creating a [pull request](https://github.com/Palmidence/Toontown/pulls) and verify your solution works.
 
+#### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
+
+Two instances of the launcher may be running simutaneously, and it cannot update.
+
+To solve this problem on Windows:
+- Open `Task Manager`
+- End all instances of `Clash Launcher`
+- End all instances of `ccbstp`
+- If the issue persists, restart your computer.
+- If the issue persists, reinstall the game.
+
+To solve this problem on Mac:
+_No support is available for this OS yet. Check back soon!_
+
 ## Gameplay
 
 #### **Q:** My game is missing some files, how do I fix this?
