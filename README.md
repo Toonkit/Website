@@ -12,7 +12,7 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
  
 >Visual C++ Redistributable Packages install runtime components of Visual C++ Libraries on a computer that does not have Visual C++ installed. The libraries are required to run applications that are developed by using the corresponding version of Visual C++.
 
-This is required to play Corporate Clash. These packages can be downloaded on [Microsoft's official website](https://www.microsoft.com/en-us/download/details.aspx?id=48145). Scroll down to `Visual Studio 2015` and follow the instructions. Both `.DLL` files are a part of the VS2015 Redistributable packages, and errors will be thrown if they either do not function, or do not exist.
+![Windows](https://i.imgur.com/oB4EbDs.png) This is required to play Corporate Clash. These packages can be downloaded on [Microsoft's official website](https://www.microsoft.com/en-us/download/details.aspx?id=48145). Scroll down to `Visual Studio 2015` and follow the instructions. Both `.DLL` files are a part of the VS2015 Redistributable packages, and errors will be thrown if they either do not function, or do not exist.
 
 #### **Q:** How do I check the status of Corporate Clash?
 
@@ -20,7 +20,7 @@ When experiencing issues, it's helpful to first [visit the Status page](https://
 
 #### **Q:** I tried to reinstall Corporate Clash and it isn't working, how do I fix this?
 
-Before you try to reinstall the game, delete all of the old files. Corporate Clash's files can be found in the `C:\Program Files (x86)\Corporate Clash` directory on Windows. A broken, outdated version may be conflicting with the new installation if the files are not deleted, thus causing issues when trying to reinstall the game.
+![Windows](https://i.imgur.com/oB4EbDs.png) Before you try to reinstall the game, delete all of the old files. Corporate Clash's files can be found in the `C:\Program Files (x86)\Corporate Clash` directory on Windows. A broken, outdated version may be conflicting with the new installation if the files are not deleted, thus causing issues when trying to reinstall the game.
 
 To install the game again, visit [corporateclash.net/play](https://corporateclash.net/play)
 
@@ -28,8 +28,8 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 
 #### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
 
-To solve this problem on Windows:
-- Try ending any current processes/instances of the launcher and/or client using `Task Manager` (`Clash Launcher, `ccbstp`).
+![Windows](https://i.imgur.com/oB4EbDs.png) To solve this problem on Windows:
+- Try ending any current processes/instances of the launcher and/or client using `Task Manager` (`Clash Launcher`, `ccbstp`).
 - Try right clicking the launcher and clicking `Run as Administrator`, to override any permissions issues.
 - Try checking your antivirus or firewall to ensure that features of the launcher aren't being blocked.
 - Try restarting your computer and reopening the launcher.
@@ -40,19 +40,19 @@ To solve this problem on Windows:
 
 #### **Q:** My launcher isn't opening at all, and isn't displaying any errors! What gives?
 
-To solve this problem:
+![Windows](https://i.imgur.com/oB4EbDs.png) To solve this problem on Windows:
 - Run the Corporate Clash uninstaller to remove the game files
-- Delete the Corporate Clash folder in C:\Program Files (x86) if it's still there
-- Download and run the uninstall utility to completely remove all remaining CC files by clicking [here](https://drive.google.com/file/d/1aqk_CyY4NRV2W8umeUOBuL_PZgpj2llS/view?usp=sharing)
-- Reinstall the game by going [here](https://corporateclash.net/play)
-
-If this doesn't work, please tell us!
+- Delete the Corporate Clash folder in `C:\Program Files (x86)` (if it's present)
+- Reinstall the game (re-download from [corporateclash.net/play](corporateclash.net/play))
+- If none of the above work, download and run the uninstall utility to completely remove all remaining CC files by clicking [here](https://drive.google.com/file/d/1aqk_CyY4NRV2W8umeUOBuL_PZgpj2llS/view?usp=sharing) and repeat Step 3.
+- If none of the above work, try restarting your computer. 
+- If none of the above work, try asking for further assistance in `#technology` with your computer information.
 
 #### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
 
 Two instances of the launcher may be running simutaneously, and it cannot update.
 
-To solve this problem on Windows:
+![Windows](https://i.imgur.com/oB4EbDs.png) To solve this problem on Windows:
 - Open `Task Manager`
 - End all instances of `Clash Launcher`
 - End all instances of `ccbstp`
@@ -60,7 +60,7 @@ To solve this problem on Windows:
 - If the issue persists, reinstall the game.
 - _NOTE:_ If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
-To solve this problem on Mac:
+![Mac](https://i.imgur.com/rHaEOQw.png?1) To solve this problem on Mac:
 - _No support is available for this OS yet. Check back soon!_
 
 ## Gameplay
