@@ -35,8 +35,8 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 - Try restarting your computer and reopening the launcher.
 - If none of the above work, try reinstalling the Corporate Clash launcher and game.
 - If none of the above work, try asking for further assistance in `#technology` with your computer information.
-- _NOTE:_ Ensure that you have the latest version of the game, and ensure that you have the C++ VS2015 Redistributable Packages.
-- _NOTE:_ If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
+- ![Note](https://i.imgur.com/eifXPBC.png) Ensure that you have the latest version of the game, and ensure that you have the C++ VS2015 Redistributable Packages.
+- ![Note](https://i.imgur.com/eifXPBC.png) If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
 #### **Q:** My launcher isn't opening at all, and isn't displaying any errors! What gives?
 
@@ -58,7 +58,7 @@ Two instances of the launcher may be running simutaneously, and it cannot update
 - End all instances of `ccbstp`
 - If the issue persists, restart your computer.
 - If the issue persists, reinstall the game.
-- _NOTE:_ If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
+- ![Note](https://i.imgur.com/eifXPBC.png) If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
 ![Mac](https://i.imgur.com/rHaEOQw.png?1) To solve this problem on Mac:
 - _No support is available for this OS yet. Check back soon!_
