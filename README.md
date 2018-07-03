@@ -38,6 +38,15 @@ To solve this problem on Windows:
 - _NOTE:_ Ensure that you have the latest version of the game, and ensure that you have the C++ VS2015 Redistributable Packages.
 - _NOTE:_ If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
+#### **Q:** My launcher isn't opening at all, and isn't displaying any errors! What gives?
+
+To solve this problem:
+- Run the Corporate Clash uninstaller to remove the game files
+- Delete the Corporate Clash folder in C:\Program Files (x86) if it's still there
+- Reinstall the game
+
+If this doesn't work, please tell us!
+
 #### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
 
 Two instances of the launcher may be running simutaneously, and it cannot update.
