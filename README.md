@@ -26,4 +26,4 @@ When experiencing issues, it's helpful to first [visit the Status page](https://
 
 #### **Q:** My game is missing some files, how do I fix this?
 
-In order to repair a faulty installation of Toontown: Corporate Clash, you must uninstall and then reinstall the game. The launcher also may periodically update your game with the files that you were missing previously.
+First, make sure that the version you are playing on is the most up-to-date version: the launcher automatically serves and handles updates. To update your game, you may close and reopen the launcher. If the issue persists, you must uninstall and then reinstall the game. This occurs when components might be missing in your game files, such as textures and models not appearing.
