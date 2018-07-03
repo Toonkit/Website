@@ -60,7 +60,7 @@ Two instances of the launcher may be running simutaneously, and it cannot update
 - If the issue persists, reinstall the game.
 - ![Note](https://i.imgur.com/eifXPBC.png) If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
-![Mac](https://i.imgur.com/B0njboS.png) To solve this problem on Mac:
+![Mac](https://i.imgur.com/oTbXjUV.png) To solve this problem on Mac:
 - _No support is available for this OS yet. Check back soon!_
 
 ## Gameplay
