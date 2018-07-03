@@ -26,7 +26,14 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 
 #### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
 
-**A:** **Nothing here!** Submit a solution by creating a [pull request](https://github.com/Palmidence/Toontown/pulls) and verify your solution works.
+To solve this problem on Windows:
+- Try ending any current processes/instances of the launcher and/or client using `Task Manager` (`Clash Launcher, `ccbstp`).
+- Try right clicking the launcher and clicking `Run as Administrator`, to override any permissions issues.
+- Try checking your antivirus or firewall to ensure that features of the launcher aren't being blocked.
+- Try restarting your computer and reopening the launcher.
+- If none of the above work, try reinstalling the Corporate Clash launcher and game.
+- If none of the above work, try asking for further assistance in `#technology` with your computer information.
+_NOTE:_ Ensure that you have the latest version of the game, and ensure that you have the C++ VS2015 Redistributable Packages.
 
 #### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
 
