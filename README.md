@@ -35,7 +35,8 @@ To solve this problem on Windows:
 - Try restarting your computer and reopening the launcher.
 - If none of the above work, try reinstalling the Corporate Clash launcher and game.
 - If none of the above work, try asking for further assistance in `#technology` with your computer information.
-_NOTE:_ Ensure that you have the latest version of the game, and ensure that you have the C++ VS2015 Redistributable Packages.
+- _NOTE:_ Ensure that you have the latest version of the game, and ensure that you have the C++ VS2015 Redistributable Packages.
+- _NOTE:_ If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
 #### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
 
@@ -47,6 +48,7 @@ To solve this problem on Windows:
 - End all instances of `ccbstp`
 - If the issue persists, restart your computer.
 - If the issue persists, reinstall the game.
+- _NOTE:_ If you can't find either process, try switching to the "Details" tab of `Task Manager` and searching there
 
 To solve this problem on Mac:
 - _No support is available for this OS yet. Check back soon!_
