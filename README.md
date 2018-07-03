@@ -6,6 +6,8 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
 
 >**Credits:** Vice#4812, Bin#7773
 
+- ![Note](https://i.imgur.com/eifXPBC.png) Computers running on a 32-bit version of windows cannot play Corporate Clash! If you have a 32-bit copy of Windows, the game will **not** run!
+
 ## Technical
 
 #### **Q:** What are C++ VS2015 Redistributable Packages? Where do I install Visual Studio Redistributable Packages? How do I fix `MVSCP140.DLL / RUNTIME.DLL were not found`?
