@@ -40,12 +40,12 @@ To solve this problem on Windows:
 
 #### **Q:** My launcher isn't opening at all, and isn't displaying any errors! What gives?
 
-To solve this problem:
+To solve this problem on Windows:
 - Run the Corporate Clash uninstaller to remove the game files
-- Delete the Corporate Clash folder in C:\Program Files (x86) if it's still there
-- Reinstall the game
-
-If this doesn't work, please tell us!
+- Delete the Corporate Clash folder in `C:\Program Files (x86)` (if it's present)
+- Reinstall the game (re-download from [corporateclash.net/play](https://corporateclash.net/play)
+- If none of the above work, try restarting your computer.
+- If none of the above work, try asking for further assistance in `#technology` with your computer information.
 
 #### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
 
