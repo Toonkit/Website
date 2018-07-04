@@ -19,15 +19,13 @@
 <link rel="canonical" href="https://palmidence.github.io/Toontown/">
 <meta property="og:url" content="https://palmidence.github.io/Toontown/">
 <meta property="og:site_name" content="Toontown">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
     // Cache selectors
 var lastId,
     topMenu = $("#sidebar-links"),
     topMenuHeight = topMenu.outerHeight()+15,
     // All list items
-    menuItems = topMenu.find("li"),
-    menuItems = menuItems.find("a"),
+    menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
@@ -215,5 +213,5 @@ $(window).scroll(function(){
     
   
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </body></html>
