@@ -20,6 +20,7 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) This is required to play Corporate Clash. These packages can be downloaded on [Microsoft's official website](https://www.microsoft.com/en-us/download/details.aspx?id=48145). Scroll down to `Visual Studio 2015` and follow the instructions. Both `.DLL` files are a part of the VS2015 Redistributable packages, and errors will be thrown if they either do not function, or do not exist.
 
+- ![Note](https://i.imgur.com/eifXPBC.png) NOTE: If you are having issues connecting to Corperate Clash, please read the answer to the question below!
 #### **Q:** How do I check the status of Corporate Clash?
 
 When experiencing issues, it's helpful to first [visit the Status page](https://status.corporateclash.net/). This describes if the services are experiencing any outages, or are running as expected. The services it reports on are the Main Game, the Website, and the Login API.
@@ -38,6 +39,7 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 #### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) To solve this problem on Windows:
+- Open `Task Manager` by pressing `CTRL+SHIFT+ESC` or by accessing it from the `CTRL+ALT+DELETE` menu.
 - Try ending any current processes/instances of the launcher and/or client using `Task Manager` (`Clash Launcher`, `ccbstp`).
 - Try right clicking the launcher and clicking `Run as Administrator`, to override any permissions issues.
 - Try checking your antivirus or firewall to ensure that features of the launcher aren't being blocked.
