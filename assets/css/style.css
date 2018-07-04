@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-.sidebar ul {
+#sidebar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     margin-top:6%;
 }
 
-.sidebar li a {
+#sidebar li a {
     display: block;
     color: #000;
     padding: 8px 16px;
@@ -22,12 +22,12 @@ body {
     text-align: center;
 }
 
-.sidebar li a.active {
+#sidebar li a.active {
     background-color: #359cd5;
     color: white;
 }
 
-.sidebar li a:hover:not(.active) {
+#sidebar li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
