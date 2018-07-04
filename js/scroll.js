@@ -32,7 +32,11 @@ $(window).scroll(function(){
    // Get the id of the current element
    cur = cur[cur.length-1];
    var id = cur && cur.length ? cur[0].id : "";
-   
+    
+    if (id=="") {
+        return;   
+    }
+    
    if (lastId !== id) {
        lastId = id;
        // Set/remove active class
