@@ -24,12 +24,12 @@ body {
     text-align: center;
 }
 
-#sidebar li a.active {
+#sidebar li.active {
     background-color: #359cd5;
     color: white;
 }
 
-#sidebar li a:hover:not(.active) {
+#sidebar li:hover:not(.active) {
     background-color: #555;
     color: white;
 }
