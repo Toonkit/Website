@@ -98,3 +98,7 @@ First, make sure that the version you are playing on is the most up-to-date vers
 - Check `#announcements` or [visit the Status page](https://status.corporateclash.net/) to see if there is currently a server outage.
 - If there is, you'll have to wait for the Corporate Clash team to fix whatever issues they are encountering.
 - If there is no server outage and other people are still able to play, chances are the servers are overloaded and crashes will be very common until the number of current players/logins has dropped. Please note the only thing you can do in this situation is to keep trying or wait for the servers to be less stressed.
+
+### **Q:** My game is stuck on a black screen. What happened?
+
+![Windows](https://i.imgur.com/oB4EbDs.png) In some cases, going to a new location will give you a black screen. This error ranges from opening doors, to entering streets: anything that requires a new loading zone. The only way to fix this is by pressing `ALT+F4` in order to close the game, as your game is locked and nothing further will happen. This also works in any other cases where you are frozen and the game will not progress.
