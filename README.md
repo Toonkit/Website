@@ -10,6 +10,8 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
 
 - ![Note](https://i.imgur.com/eifXPBC.png) Computers running on a **32-bit version of Windows** cannot play Corporate Clash. If you have a 32-bit copy of Windows, the game will **not** run. The minimum requirement to run Corporate Clash is a 64-bit Windows 7 with a	Dual-Core processor and	4 GB	of RAM, with Intel Integrated Graphics operating on at least 512MB of VRAM.
 
+- ![Note](https://i.imgur.com/eifXPBC.png) **Although computers running Windows 7 technically meet the minimum requirements, support for Windows 7 is currently broken and is being worked on. This section will be updated once this changes.**
+
 - ![Note](https://i.imgur.com/eifXPBC.png) Computers running **Mac** or **Linux** cannot play Corporate Clash. However, Mac support is going to arrive to Corporate Clash very soon. The minimum requirement to run Corporate Clash on **Mac** is [MacOS 10.12 Sierra](https://en.wikipedia.org/wiki/MacOS_Sierra).
 
 ## Technical
