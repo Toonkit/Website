@@ -1,3 +1,4 @@
+function changeside() {
 var lastId,
     topMenu = $("#sidebar-links"),
     topMenuHeight = topMenu.outerHeight()+15,
@@ -40,3 +41,4 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
+}
