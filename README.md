@@ -28,7 +28,7 @@ When experiencing issues, it's helpful to first [visit the Status page](https://
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) Before you try to reinstall the game, delete all of the old files. Corporate Clash's files can be found in the `C:\Program Files (x86)\Corporate Clash` directory on Windows. A broken, outdated version may be conflicting with the new installation if the files are not deleted, thus causing issues when trying to reinstall the game.
 
-To completely ensure all leftover files are gone, please run the cleanup utility by downloading it from [here](https://drive.google.com/file/d/1aqk_CyY4NRV2W8umeUOBuL_PZgpj2llS/view?usp=sharing).
+To completely ensure all leftover files are gone, please run the cleanup utility by downloading it from [here](https://drive.google.com/file/d/1d6enIhrdy2cU71B1FNbqNUJFwMPtBFiv/view?usp=sharing).
 
 To install the game again, visit [corporateclash.net/play](https://corporateclash.net/play)
 
@@ -59,7 +59,7 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 - Run the Corporate Clash uninstaller to remove the game files
 - Delete the Corporate Clash folder in `C:\Program Files (x86)` (if it's present)
 - Reinstall the game (re-download from [corporateclash.net/play](corporateclash.net/play))
-- If none of the above work, download and run the uninstall utility to completely remove all remaining CC files by clicking [here](https://drive.google.com/file/d/1aqk_CyY4NRV2W8umeUOBuL_PZgpj2llS/view?usp=sharing) and repeat Step 3.
+- If none of the above work, download and run the uninstall utility to completely remove all remaining CC files by clicking [here](https://drive.google.com/file/d/1d6enIhrdy2cU71B1FNbqNUJFwMPtBFiv/view?usp=sharing) and repeat Step 3.
 - If none of the above work, try restarting your computer. 
 - If none of the above work, try asking for further assistance in `#technology` with your computer information.
 
