@@ -12,6 +12,7 @@ ul {
     position: fixed;
     height: 100%;
     overflow: auto;
+    margin-top:6%;
 }
 
 li a {
@@ -22,7 +23,7 @@ li a {
 }
 
 li a.active {
-    background-color: #4CAF50;
+    background-color: #359cd5;
     color: white;
 }
 
