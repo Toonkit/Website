@@ -60,8 +60,8 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 ![Windows](https://i.imgur.com/oB4EbDs.png) To solve this problem on Windows:
 - Run the Corporate Clash uninstaller to remove the game files
 - Delete the Corporate Clash folder in `C:\Program Files (x86)` (if it's present)
+- Download and run the uninstall utility to completely remove all remaining CC files by clicking [here](https://drive.google.com/file/d/1d6enIhrdy2cU71B1FNbqNUJFwMPtBFiv/view?usp=sharing)
 - Reinstall the game (re-download from [corporateclash.net/play](corporateclash.net/play))
-- If none of the above work, download and run the uninstall utility to completely remove all remaining CC files by clicking [here](https://drive.google.com/file/d/1d6enIhrdy2cU71B1FNbqNUJFwMPtBFiv/view?usp=sharing) and repeat Step 3.
 - If none of the above work, try restarting your computer. 
 - If none of the above work, try asking for further assistance in `#technology` with your computer information.
 
