@@ -20,7 +20,6 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) This is required to play Corporate Clash. These packages can be downloaded on [Microsoft's official website](https://www.microsoft.com/en-us/download/details.aspx?id=48145). Scroll down to `Visual Studio 2015` and follow the instructions. Both `.DLL` files are a part of the VS2015 Redistributable packages, and errors will be thrown if they either do not function, or do not exist.
 
-- ![Note](https://i.imgur.com/eifXPBC.png) NOTE: If you are having issues connecting to Corperate Clash, please read the answer to the question below!
 #### **Q:** How do I check the status of Corporate Clash?
 
 When experiencing issues, it's helpful to first [visit the Status page](https://status.corporateclash.net/). This describes if the services are experiencing any outages, or are running as expected. The services it reports on are the Main Game, the Website, and the Login API.
