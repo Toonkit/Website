@@ -6,13 +6,13 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
 
 >**Credits:** Vice#4812, Bin#7773
 
-## **Unsupported Versions**
+## Unsupported Versions
 
 - ![Note](https://i.imgur.com/eifXPBC.png) Computers running on a **32-bit version of Windows** cannot play Corporate Clash. If you have a 32-bit copy of Windows, the game will **not** run. The minimum requirement to run Corporate Clash is a 64-bit Windows 7 with a	Dual-Core processor and	4 GB	of RAM, with Intel Integrated Graphics operating on at least 512MB of VRAM.
 
 - ![Note](https://i.imgur.com/eifXPBC.png) Computers running **Mac** or **Linux** cannot play Corporate Clash. However, Mac support is going to arrive to Corporate Clash very soon. The minimum requirement to run Corporate Clash on **Mac** is [MacOS 10.12 Sierra](https://en.wikipedia.org/wiki/MacOS_Sierra).
 
-## **Technical**
+## Technical
 
 ### **Q:** What are C++ VS2015 Redistributable Packages? Where do I install Visual Studio Redistributable Packages? How do I fix `MVSCP140.DLL / RUNTIME.DLL were not found`?
  
@@ -35,7 +35,7 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 ![Mac](https://i.imgur.com/bo61GBx.png) To solve this problem on Mac:
 - _No support is available for this OS yet. Check back soon!_
 
-## **Launcher**
+## Launcher
 
 ### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
 
@@ -85,7 +85,7 @@ Two instances of the launcher may be running simutaneously, and it cannot update
 - If the issue persists, restart your computer.
 - If the issue persists, reinstall the game.
 
-## **Gameplay**
+## Gameplay
 
 ### **Q:** My game is missing some files, how do I fix this?
 
