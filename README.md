@@ -14,17 +14,17 @@ You may submit both questions and issues: for **gameplay-related issues**, pleas
 
 ## Technical
 
-#### **Q:** What are C++ VS2015 Redistributable Packages? Where do I install Visual Studio Redistributable Packages? How do I fix `MVSCP140.DLL / RUNTIME.DLL were not found`?
+### **Q:** What are C++ VS2015 Redistributable Packages? Where do I install Visual Studio Redistributable Packages? How do I fix `MVSCP140.DLL / RUNTIME.DLL were not found`?
  
 >Visual C++ Redistributable Packages install runtime components of Visual C++ Libraries on a computer that does not have Visual C++ installed. The libraries are required to run applications that are developed by using the corresponding version of Visual C++.
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) This is required to play Corporate Clash. These packages can be downloaded on [Microsoft's official website](https://www.microsoft.com/en-us/download/details.aspx?id=48145). Scroll down to `Visual Studio 2015` and follow the instructions. Both `.DLL` files are a part of the VS2015 Redistributable packages, and errors will be thrown if they either do not function, or do not exist.
 
-#### **Q:** How do I check the status of Corporate Clash?
+### **Q:** How do I check the status of Corporate Clash?
 
 When experiencing issues, it's helpful to first [visit the Status page](https://status.corporateclash.net/). This describes if the services are experiencing any outages, or are running as expected. The services it reports on are the Main Game, the Website, and the Login API.
 
-#### **Q:** I tried to reinstall Corporate Clash and it isn't working, how do I fix this?
+### **Q:** I tried to reinstall Corporate Clash and it isn't working, how do I fix this?
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) Before you try to reinstall the game, delete all of the old files. Corporate Clash's files can be found in the `C:\Program Files (x86)\Corporate Clash` directory on Windows. A broken, outdated version may be conflicting with the new installation if the files are not deleted, thus causing issues when trying to reinstall the game.
 
@@ -37,7 +37,7 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 
 ## Launcher
 
-#### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
+### **Q:** When I click play in the launcher, it's stuck on "Come back soon!" and nothing launches
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) To solve this problem on Windows:
 - Open `Task Manager` by pressing `CTRL+SHIFT+ESC` or by accessing it from the `CTRL+ALT+DELETE` menu.
@@ -53,7 +53,7 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 ![Mac](https://i.imgur.com/bo61GBx.png) To solve this problem on Mac:
 - _No support is available for this OS yet. Check back soon!_
 
-#### **Q:** My launcher isn't opening at all, and isn't displaying any errors! What gives?
+### **Q:** My launcher isn't opening at all, and isn't displaying any errors! What gives?
 
 ![Windows](https://i.imgur.com/oB4EbDs.png) To solve this problem on Windows:
 - Run the Corporate Clash uninstaller to remove the game files
@@ -66,7 +66,7 @@ To install the game again, visit [corporateclash.net/play](https://corporateclas
 ![Mac](https://i.imgur.com/bo61GBx.png) To solve this problem on Mac:
 - _No support is available for this OS yet. Check back soon!_
 
-#### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
+### **Q:** I'm constantly getting `A Fatal Error occurred while downloading  a new version of the launcher. Error Code 1` when I try to launch the game, how do I fix this?
 
 Two instances of the launcher may be running simutaneously, and it cannot update.
 
@@ -87,11 +87,11 @@ Two instances of the launcher may be running simutaneously, and it cannot update
 
 ## Gameplay
 
-#### **Q:** My game is missing some files, how do I fix this?
+### **Q:** My game is missing some files, how do I fix this?
 
 First, make sure that the version you are playing on is the most up-to-date version: the launcher automatically serves and handles updates. To update your game, you may close and reopen the launcher. If the issue persists, you must uninstall and then reinstall the game. This occurs when components might be missing in your game files, such as textures and models not appearing.
 
-#### **Q:** My game says that my internet connection to the servers has been broken, but my internet's working fine! What's going wrong?
+### **Q:** My game says that my internet connection to the servers has been broken, but my internet's working fine! What's going wrong?
 
 - Check `#announcements` or [visit the Status page](https://status.corporateclash.net/) to see if there is currently a server outage.
 - If there is, you'll have to wait for the Corporate Clash team to fix whatever issues they are encountering.
