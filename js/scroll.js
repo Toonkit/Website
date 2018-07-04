@@ -1,7 +1,7 @@
 function changeside() {
 var lastId,
     topMenu = $("#sidebar-links"),
-    topMenuHeight = topMenu.outerHeight()+15,
+    topMenuHeight = topMenu.outerHeight(),
     // All list items
     menuItems = topMenu.find('a[href^="#"]'),
     // Anchors corresponding to menu items
