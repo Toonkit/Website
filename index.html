@@ -43,6 +43,11 @@ for (var myDropdown of myDropdowns) {
     if (e.target.matches('.dropbtn'))
         myFunction(e.target);
 }
+        
+function closeFooter() {
+ var foot = document.getElementByClassName('footer');
+    foot.style.display="none";
+}
 </script>
 <script type="application/ld+json">
 {"name":"Toontown","description":"Common technical issues regarding Toontown: Corporate Clash, and their solutions","@type":"WebSite","url":"https://palmidence.github.io/Toontown/","headline":"Toontown: Corporate Clash Technical Issues FAQ","@context":"http://schema.org"}</script>
@@ -199,11 +204,11 @@ for (var myDropdown of myDropdowns) {
         <aside id="sidebar">
           
           <ul id="sidebar-links">
-  <li class="active"><a href="#">Home</a></li>
+  <li class=""><a href="#">Home</a></li>
   <li class=""><a href="#unsupported-versions">Unsupported Versions</a></li>
   <li class=""><a href="#technical">Technical</a></li>
   <li class=""><a href="#launcher">Launcher</a></li>
-    <li class=""><a href="#gameplay">Gameplay</a></li>          
+    <li class="active"><a href="#gameplay">Gameplay</a></li>          
 </ul>
           
     <a href="https://github.com/Palmidence/Toontown/issues" align="center" position="relative"><img src="/Toontown/assets/images/bugreport.png" width="85%" height="125px" style="position:relative;left:6%;z-index: 1;"></a>
@@ -219,5 +224,11 @@ for (var myDropdown of myDropdowns) {
 
 
 </b></b>
-<div class="footer">This project has recently been opened! Send any suggestions or issues by<a href="https://discord.gg/5pr4mRN"><strong> joining our Discord server</strong></a>!</div>
+<div class="footer">This project has recently been opened! Send any suggestions or issues by<a href="https://discord.gg/5pr4mRN"><strong> joining our Discord server</strong></a>! <button onclick="closeFooter" float="right" style="
+    float: right;
+    color: black;
+    font-family: inherit;
+    border-radius: 10px;
+">X</button></div>
+
 </body></html>
