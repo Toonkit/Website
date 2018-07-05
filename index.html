@@ -35,10 +35,12 @@ var subarray = element.parentElement.getElementsByClassName('dropdown-content');
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
+    var myDropdowns = document.getElementsById("myDropdown");
+for (var myDropdown in myDropdowns) {
+      if (myDropdown.classList.includes('show')) {
         myDropdown.classList.remove('show');
       }
+}
   }
 }
 </script>
