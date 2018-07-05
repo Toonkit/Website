@@ -50,13 +50,13 @@ window.onclick = function(e) {
   <body onload="changeside()">
         <div class="navbar">
   <a href="index.html/">Home</a>
-  <a href="#">Staff</a>
+  <a href="/Toontown/staff">Staff</a>
   <div class="dropdown">
     <button class="dropbtn" onclick="myFunction()">Support
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content" id="myDropdown">
-      <a href="#">Corporate Clash FAQ</a>
+      <a href="/Toontown/">Corporate Clash FAQ</a>
       <a href="#">Toontown Rewritten FAQ</a>
     </div>
   </div>
@@ -110,5 +110,13 @@ window.onclick = function(e) {
 
 
 </b></b>
-<div class="footer">This project has recently been opened! Send any suggestions or issues by<a href="https://discord.gg/5pr4mRN"><strong> joining our Discord server</strong></a>!</div>
+  <div class="footer" id="footer">This project has recently been opened! Send any suggestions or issues by<a href="https://discord.gg/5pr4mRN"><strong> joining our Discord server</strong></a>!
+        <button onclick="closeFooter()" float="right" style="
+    float: right;
+    color: black;
+    font-family: inherit;
+    /* border-radius: 10px; */
+    border: none;
+                                                     "><b>X</b></button>
+    </div>
 </body></html>
