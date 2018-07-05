@@ -34,14 +34,14 @@ var subarray = element.parentElement.getElementsByClassName('dropdown-content');
  
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
-  if (!e.target.parentElement.matches('.dropdown-content')) {
     var myDropdowns = document.getElementsByName("myDropdown");
 for (var myDropdown of myDropdowns) {
       if (myDropdown.classList.contains('show')) {
         myDropdown.classList.remove('show');
       }
-}
   }
+    if (e.target.matches('.dropbtn'))
+        myFunction(e.target);
 }
 </script>
 <script type="application/ld+json">
@@ -59,7 +59,7 @@ for (var myDropdown of myDropdowns) {
   <a href="#home">Home</a>
   <a href="#news">Staff</a>
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction(this)">Support
+    <button class="dropbtn">Support
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content" name="myDropdown">
@@ -68,7 +68,7 @@ for (var myDropdown of myDropdowns) {
     </div>
   </div>
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction(this)">Speedrun
+    <button class="dropbtn">Speedrun
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content" name="myDropdown">
