@@ -39,7 +39,25 @@ body {
 .alert-note {
     color: #FFFFFF;
     background-color: #FF2323;
-    border-color: #ebccd1;
+    border-color: #FFFFFF;
+}
+
+.alert-violet {
+    color: #FFFFFF;
+    background-color: blueviolet;
+    border-color: #FFFFFF;
+}
+
+.alert-blue {
+    color: #FFFFFF;
+    background-color: blueviolet;
+    border-color: #FFFFFF;
+}
+
+.alert-green {
+    color: #FFFFFF;
+    background-color: darkgreen;
+    border-color: #FFFFFF;
 }
 
 .alert {
