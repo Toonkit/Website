@@ -40,8 +40,10 @@ for (var myDropdown of myDropdowns) {
         myDropdown.classList.remove('show');
       }
   }
-    if (e.target.matches('.dropbtn')||e.target.parentElement.matches('.dropbtn'))
+    if (e.target.matches('.dropbtn'))
         myFunction(e.target);
+    else if (e.target.parentElement.matches('.dropbtn'))
+        myFunction(e.parentElement);
 }
 </script>
 <script type="application/ld+json">
