@@ -37,7 +37,7 @@ window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     var myDropdowns = document.getElementsByName("myDropdown");
 for (var myDropdown of myDropdowns) {
-      if (myDropdown.classList.includes('show')) {
+      if (myDropdown.classList.contains('show')) {
         myDropdown.classList.remove('show');
       }
 }
