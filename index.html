@@ -40,7 +40,7 @@ for (var myDropdown of myDropdowns) {
         myDropdown.classList.remove('show');
       }
   }
-    if (e.target.matches('.dropbtn'))
+    if (e.target.matches('.dropbtn')||e.target.parentElement.matches('.dropbtn'))
         myFunction(e.target);
 }
 </script>
