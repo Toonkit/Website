@@ -27,8 +27,9 @@
     <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function myFunction(element) {
+var subarray = element.parentElement.getElementsByClassName('dropdown-content');
+    subarray[0].classList.toggle('show');
 }
  
 // Close the dropdown if the user clicks outside of it
@@ -56,7 +57,7 @@ window.onclick = function(e) {
   <a href="#home">Home</a>
   <a href="#news">Staff</a>
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Support
+    <button class="dropbtn" onclick="myFunction(this)">Support
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content" id="myDropdown">
@@ -65,7 +66,7 @@ window.onclick = function(e) {
     </div>
   </div>
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Speedrun
+    <button class="dropbtn" onclick="myFunction(this)">Speedrun
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content" id="myDropdown">
