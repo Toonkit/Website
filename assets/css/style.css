@@ -81,3 +81,10 @@ body {
   text-align: center;
   z-index: 5;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
