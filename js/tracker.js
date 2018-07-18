@@ -1,3 +1,4 @@
+  document.getElementById('curinv').innerHTML='trying';
 updateInvasions();
 setInterval(() => {
   updateInvasions();
@@ -5,9 +6,12 @@ setInterval(() => {
   function updateInvasions() {
              var xhttp = new XMLHttpRequest();
              xhttp.onreadystatechange = function() {
+                 document.getElementById('curinv').innerHTML='ready';
                  if (this.readyState == 4 && this.status == 200) {
+                     document.getElementById('curinv').innerHTML='ok';
                      var element = $('#curinv')[0];
                      var data = JSON.parse(xhttp.responseText);
+                   document.getElementById('curinv').innerHTML=data;
                      var i = 0;
                      $.each(data, function(i, o) {
                          if (o.cogs_attacking != 'None') {
