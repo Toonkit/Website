@@ -1,4 +1,5 @@
-  document.getElementById('curinv').innerHTML='trying';
+$(document).ready(function() {  
+document.getElementById('curinv').innerHTML='trying';
 updateInvasions();
 setInterval(() => {
   updateInvasions();
@@ -29,3 +30,4 @@ setInterval(() => {
                  xhttp.send();
              }
   }
+});
