@@ -1,3 +1,3 @@
-# Toontown: Corporate Clash Technical Issues FAQ
+# Toonkit Website
 
-### Read the FAQ by visiting [https://palmidence.github.io/Toontown/index.html](https://palmidence.github.io/Toontown/index.html)
+### More information coming soon! In the meantime, why not check out our [homepage](https://toonkit.net)?
