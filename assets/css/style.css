@@ -88,3 +88,21 @@ body {
     margin-right: auto;
     width: 50%;
 }
+
+#card-left {
+    float: left;
+    width: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: -8px 0px 20px 0px lightgrey;
+    border-radius: 30px;
+}
+
+#card-right {
+    float: right;
+    width: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: -8px 0px 20px 0px lightgrey;
+    border-radius: 30px;
+}
