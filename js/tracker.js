@@ -1,8 +1,12 @@
- setInterval(() => {
+updateInvasions();
+setInterval(() => {
+  updateInvasions();
+   }, 60000);
+  function updateInvasions() {
              var xhttp = new XMLHttpRequest();
              xhttp.onreadystatechange = function() {
                  if (this.readyState == 4 && this.status == 200) {
-                     var element = $('#curinv');
+                     var element = $('#curinv')[0];
                      var data = JSON.parse(xhttp.responseText);
                      var i = 0;
                      $.each(data, function(i, o) {
@@ -20,4 +24,4 @@
                  xhttp.open("GET", "https://corporateclash.net/api/v1/districts", true);
                  xhttp.send();
              }
- }, 60000);
+  }
