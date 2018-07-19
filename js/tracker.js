@@ -11,7 +11,7 @@ $(document).ready(function() {
                 if (o.cogs_attacking != 'None' && Math.round(o.remaining_time)!=0) {
                     noinv = false;
                     var newElement = `<section id="${indx%2==0?'card-left':'card-right'}">
-<img draggable="false" class="cog" src="../assets/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
+<img draggable="false" class="cog" src="https://github.com/Toonkit/Website/tree/master/assets/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
                 <h2>${o.cogs_attacking}</h2>
                 <h3>${o.name}</h3>
                 <p>${o.count_defeated}/${o.count_total} Cogs | <b>${Math.round(o.remaining_time/60)}</b> minutes remaining</p>
