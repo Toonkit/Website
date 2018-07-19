@@ -32,6 +32,6 @@ $(document).ready(function() {
 
 function updateInvasions() {
     $("#curinv").html('');
-    xhttp.open("GET", "https://corporateclash.net/api/v1/districts", true);
+    xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
     xhttp.send();
 }
