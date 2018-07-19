@@ -14,7 +14,7 @@ $(document).ready(function() {
 <img draggable="false" class="cog" src="https://raw.githubusercontent.com/Toonkit/Website/master/assets/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
                 <h2>${o.cogs_attacking}</h2>
                 <h3>${o.name}</h3>
-                <p>${o.count_defeated}/${o.count_total} Cogs | <b>${Math.round(o.remaining_time/60)}</b> minutes remaining</p>
+                <p>${o.count_total-o.count_defeated}/${o.count_total} Cogs | <b>${Math.round(o.remaining_time/60)}</b> minutes remaining</p>
  </section>`;
                     element.insertAdjacentHTML('beforeend', newElement);
                     indx++;
