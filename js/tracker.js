@@ -1,7 +1,50 @@
 var xhttp = new XMLHttpRequest();
 
 $(document).ready(function() {
-    xhttp.onreadystatechange = function() {
+    if ($("#districts"))
+        initDistricts();
+    else if ($("#curinv"))
+         initInvasions();
+    updateStats();
+    setInterval(()=>updateStats(),60000);
+});
+
+function updateStats() {
+    $("#curinv").html('');
+    $("#districts").html('');
+    $("#servers").html('');
+    xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
+    xhttp.send();
+}
+
+function initDistricts() {
+     xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var element = $("#districts")[0];
+            var data = JSON.parse(xhttp.responseText);
+            $.each(data, function(i, o) {
+                    var newElement = `<section id="${i%2==0?'card-left':'card-right'}">
+                <h2>${o.name}</h3> 
+              <h3><b color="${o.online?'green':'red'}">${o.online?'Online':'Offline'}</b></h3>
+            <h3>${o.population} Toons</h3>
+ </section>`;
+                    element.insertAdjacentHTML('beforeend', newElement);
+            });
+             //element = $("#servers")[0];
+            //$.each(data, function(i, o) {
+              //      var newElement = `<section id="card">
+               // <h2>${o.name}</h3> 
+              //<h3><b color="${o.online?'green':'red'">${o.online?'Online':'Offline'}</b></h3>
+            //<h3>${o.population} Toons</h2>
+// </section>`;
+  //                  element.insertAdjacentHTML('beforeend', newElement);
+    //        });
+        }
+    };
+}
+
+function initInvasions() {
+     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var element = $("#curinv")[0];
             var data = JSON.parse(xhttp.responseText);
@@ -26,12 +69,4 @@ $(document).ready(function() {
                 $("#noinv").hide();
         }
     };
-    updateInvasions();
-    setInterval(()=>updateInvasions(),60000);
-});
-
-function updateInvasions() {
-    $("#curinv").html('');
-    xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
-    xhttp.send();
 }
