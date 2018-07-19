@@ -7,7 +7,7 @@ $(document).ready(function() {
             var data = JSON.parse(xhttp.responseText);
             $.each(data, function(i, o) {
                 if (o.cogs_attacking != 'None') {
-                    var newElement = `<section id="${i%2==0?'card-left':'card-right'}">
+                    var newElement = `<section id="${i%2!=0?'card-left':'card-right'}">
 <img draggable="false" src="https://toonhq.org/static/2.4.3/img/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
                 <h2>${o.cogs_attacking}</h2>
                 <h3>${o.name}</h3>
