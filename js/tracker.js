@@ -18,7 +18,10 @@ $(document).ready(function() {
                     element.insertAdjacentHTML('beforeend', newElement);
                 }
             });
-            if (noinv) $("#noinv")[0].show() else $("#noinv")[0].hide());
+            if (noinv) 
+                $("#noinv")[0].show();
+            else 
+                $("#noinv")[0].hide();
         }
     };
     updateInvasions();
