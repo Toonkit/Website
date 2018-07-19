@@ -1,9 +1,9 @@
 var xhttp = new XMLHttpRequest();
 
 $(document).ready(function() {
-    if ($("#districts"))
+    if ($("#districts")[0])
         initDistricts();
-    else if ($("#curinv"))
+    else if ($("#curinv")[0])
          initInvasions();
     updateStats();
     setInterval(()=>updateStats(),60000);
