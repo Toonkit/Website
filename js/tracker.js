@@ -19,6 +19,7 @@ $(document).ready(function() {
         }
     };
     updateInvasions();
+    setInterval(updateInvasions(),60000);
 });
 
 function updateInvasions() {
