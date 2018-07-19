@@ -25,7 +25,7 @@ function initDistricts() {
             $.each(data, function(i, o) {
                     var newElement = `<section id="${i%2==0?'card-left':'card-right'}">
                 <h2>${o.name}</h3> 
-              <h3><b color="${o.online?'green':'red'}">${o.online?'Online':'Offline'}</b></h3>
+              <h3><b style="color:${o.online?'#08cb08':'red'}">${o.online?'Online':'Offline'}</b></h3>
             <h3>${o.population} Toons</h3>
  </section>`;
                     element.insertAdjacentHTML('beforeend', newElement);
