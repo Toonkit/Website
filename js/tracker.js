@@ -5,6 +5,7 @@ $(document).ready(function() {
                  if (this.readyState == 4 && this.status == 200) {
                      var data = JSON.parse(xhttp.responseText);
                     $("#curinv")[0].html=data;
+                 }
                  };
 document.getElementById('curinv').innerHTML='trying';
 updateInvasions();
