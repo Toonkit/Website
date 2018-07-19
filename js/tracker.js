@@ -17,4 +17,3 @@ updateInvasions();
                document.getElementById('curinv').innerHTML='sending';
                  xhttp.send();
              }
-  }
