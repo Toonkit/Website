@@ -3,7 +3,7 @@ var xhttp = new XMLHttpRequest();
 $(document).ready(function() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            var element = $("#curinv");
+            var element = $("#curinv")[0];
             var data = JSON.parse(xhttp.responseText);
             $.each(data, function(i, o) {
                 if (o.cogs_attacking != 'None') {
