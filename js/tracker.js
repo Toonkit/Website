@@ -10,7 +10,7 @@ setInterval(() => {
                  document.getElementById('curinv').innerHTML='ready';
                  if (this.readyState == 4 && this.status == 200) {
                      document.getElementById('curinv').innerHTML='ok';
-                     var element = $('#curinv')[0];
+                     var element = $("#curinv")[0];
                      var data = JSON.parse(xhttp.responseText);
                    document.getElementById('curinv').innerHTML=data;
                      var i = 0;
