@@ -6,7 +6,7 @@ $(document).ready(function() {
             var element = $("#curinv")[0];
             var data = JSON.parse(xhttp.responseText);
             $.each(data, function(i, o) {
-                if (o.cogs_attacking != 'None') {
+                if (o.cogs_attacking != 'None' && Math.round(o.remaining_time)!=0) {
                     var newElement = `<section id="${i%2!=0?'card-left':'card-right'}">
 <img draggable="false" class="cog" src="https://toonhq.org/static/2.4.3/img/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
                 <h2>${o.cogs_attacking}</h2>
@@ -19,7 +19,7 @@ $(document).ready(function() {
         }
     };
     updateInvasions();
-    setInterval(updateInvasions(),60000);
+    setInterval(()=>updateInvasions(),60000);
 });
 
 function updateInvasions() {
