@@ -8,7 +8,7 @@ $(document).ready(function() {
             $.each(data, function(i, o) {
                 if (o.cogs_attacking != 'None') {
                     var newElement = `<section id="${i%2==0?'card-left':'card-right'}">
-<img draggable="false" src="https://toonhq.org/static/2.4.3/img/cogs/${o.cogs_attacking.toLowerCase()}.png">
+<img draggable="false" src="https://toonhq.org/static/2.4.3/img/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'-')}.png">
                 <h2>${o.cogs_attacking}</h2>
                 <h3>${o.name}</h3>
                 <p>${o.count_defeated}/${o.count_total} Cogs | <b>${Math.round(o.remaining_time/60)}</b> minutes remaining</p>
