@@ -19,9 +19,9 @@ $(document).ready(function() {
                 }
             });
             if (noinv) 
-                $("#noinv")[0].show();
+                $("#noinv").show();
             else 
-                $("#noinv")[0].hide();
+                $("#noinv").hide();
         }
     };
     updateInvasions();
