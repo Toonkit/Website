@@ -29,6 +29,7 @@ $(document).ready(function() {
 });
 
 function updateInvasions() {
+    $("#curinv").html('');
     xhttp.open("GET", "https://corporateclash.net/api/v1/districts", true);
     xhttp.send();
 }
