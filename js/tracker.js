@@ -4,7 +4,7 @@ $(document).ready(function() {
                xhttp.onreadystatechange = function() {
                  if (this.readyState == 4 && this.status == 200) {
                      var data = JSON.parse(xhttp.responseText);
-                    $("#curinv")[0].text(data);
+                    $("#curinv").text(data);
                  }
                  };
 document.getElementById('curinv').innerHTML='trying';
