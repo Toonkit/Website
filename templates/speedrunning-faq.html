@@ -1,116 +1,12 @@
-<html lang="en-US"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css?v=56a0505306d5abf93dbedeb06cd828a0d26b06f7" media="screen" type="text/css">
-    <link rel="stylesheet" href="assets/css/print.css" media="print" type="text/css">
-    <link rel="stylesheet" href="assets/css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="favicon.ico">
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+{% endblock head %}
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
-    <title>Toontown: Speedrunning FAQ | Toontown</title>
-    <meta name="generator" content="Jekyll v3.7.3">
-    <meta property="og:title" content="Toontown: Speedrunning FAQ">
-    <meta property="og:locale" content="en_US">
-    <meta name="description" content="Frequently asked questions regarding speedrunning on Toontown servers">
-    <meta property="og:description" content="Frequently asked questions regarding speedrunning on Toontown servers">
-    <link rel="canonical" href="https://toonkit.net">
-    <meta property="og:url" content="https://toonkit.net">
-    <meta property="og:site_name" content="Toontown">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/scroll.js"></script>
-    <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction(element) {
-            var subarray = element.parentElement.getElementsByClassName('dropdown-content');
-            subarray[0].classList.toggle('show');
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-            var myDropdowns = document.getElementsByName("myDropdown");
-            for (var myDropdown of myDropdowns) {
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
-                }
-            }
-            if (e.target.matches('.dropbtn'))
-                myFunction(e.target);
-        }
-
-        function closeFooter() {
-            var foot = document.getElementById('footer');
-            foot.style.display = "none";
-        }
-    </script>
-    <script type="application/ld+json">
-        {"name":"Toontown","description":"Frequently asked questions regarding speedrunning on Toontown servers","@type":"WebSite","url":"https://toonkit.net","headline":"Toontown: Speedrunning FAQ","@context":"http://schema.org"}</script>
-    <!-- End Jekyll SEO tag -->
-
-</head>
-
-<body onload="changeside()">
-    <div class="navbar">
-        <img src="assets/images/toonkit-logo.png" class="dropdown" height="5%" style="
-    padding-left: 5px;
-    padding-right: 5px;
-">
-        <a href="/">Home</a>
-        <a href="Staff">Staff</a>
-        <div class="dropdown">
-            <button class="dropbtn">Support
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" name="myDropdown">
-                <a href="Clash-FAQ">Corporate Clash FAQ</a>
-                <a href="#">Toontown Rewritten FAQ</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Speedrun
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" name="myDropdown">
-                <a href="#">Speedrunning FAQ</a>
-                <a href="#">Leaderboard: Corporate Clash</a>
-                <a href="#">Leaderboard: Rewritten</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Trackers
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" name="myDropdown">
-                <a href="CC-Tracker">CC Invasion Tracker</a>
-                <a href="CC-Status">CC Status</a>
-                <a href="#">TTR Invasion Tracker</a>
-                <a href="#">TTR Status</a>
-            </div>
-        </div>
-    </div>
-    <header>
-        <div class="inner">
-            <h1><a href="#"><img src="assets/images/toonkit-logo.png" width="432px" height="153px" style="
-    margin-top: -0.6em;
-"></a></h1>
-            <h2 style="
-    position: relative;
-    top: 20;
-">Frequently asked questions regarding speedrunning on Toontown servers</h2>
-
-            <a href="https://github.com/Toonkit/Website" class="button"><small>View project on</small> GitHub</a>
-
-        </div>
-    </header>
-
-    <div id="content-wrapper">
-        <div class="inner clearfix">
+{% block content %}
+<div id="content-wrapper">
+    <div class="inner clearfix">
 <section id="main-content">
                 <h1><a id="Toontown_Speedrunning_FAQ_0"></a>Toontown: Speedrunning FAQ</h1>
                 
@@ -146,24 +42,6 @@
                 
                 <h2><a id="how-do-i-time-how-long-my-attempt-run-was"></a>How do I time how long my attempt/run was?</h2>
                 <p>In order to time your runs, Toonkit recommends using <a href="http://livesplit.org/downloads/">Livesplit</a> or another tool such as ones listed on <a href="http://www.speedrunslive.com/tools/">SpeedRunsLive</a>. Most runners prefer using Livesplit due to its versatility.</p>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
             </section><b><b>
 
         <aside id="sidebar">
@@ -189,11 +67,5 @@
     border: none;
                                                      "><b>X</b></button>
     </div>
-
-
-
-
-
-
-
-</b></b></body></html>
+</b></b>
+{% endblock content %}

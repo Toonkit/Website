@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+  <script type="text/javascript" src="{{ url_for('static', filename='js/tracker.js') }}"></script>
+{% endblock head %}
+
+{% block content %}
+<body style="background-image:url('https://i.imgur.com/PGI4SID.png');background-size: cover;background-repeat:  no-repeat;background-position-y: 20px;">
+    
+    
+
+    <div style="
+    border-top-width: 0px;
+" id="content-wrapper">
+
+        <div class="inner clearfix" style="
+">
+            
+
+<section id="main-content" style="
+    width: 1000px;
+    padding-bottom: 5%;
+    left: 50;
+    position: relative;
+    background: #ffffffc7;
+">
+
+    <h1>Server Statuses</h1><p></p><div class="alert alert-note"><strong>Note</strong></div> This tracker uses API publicly provided by the Corporate Clash Team. <a href="https://github.com/CorporateClash/api-docs">View it on GitHub</a><h3>This list automatically refreshes every minute.</h3>
+<hr>
+
+            
+
+<div class="navbar">
+        
+        <a href="#">Current</a>
+        <a href="#">Statistics</a>
+        
+        
+    </div>
+    <div id="servers"></div>
+<div id="districts"></div>
+           
+    </section>
+    
+    </div>
+    </div><b><b>
+
+</b></b>
+    <div class="footer" id="footer" style="display: none;">This project has recently been opened! Send any suggestions or issues by<a href="https://discord.gg/5pr4mRN"><strong> joining our Discord server</strong></a>!
+        <button onclick="closeFooter()" float="right" style="
+    float: right;
+    color: black;
+    font-family: inherit;
+    /* border-radius: 10px; */
+    border: none;
+                                                     "><b>X</b></button>
+    </div>
+
+{% endblock content %}
