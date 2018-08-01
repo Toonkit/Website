@@ -1,18 +1,16 @@
-html{
+/*html{
   min-height:100%;
-  /*font-size:62.5%*/
-}
+
+  font-size:62.5%
+}*/
 
 body{
-  padding-top: 50px;
-  font-size:1.4rem;
-  font-family:arial; /*cursive raleway,*/
-  font-weight:500;
+  /*padding-top: 50px;*/
   background:#000000;
   background-image:url("../gags_pattern.png");
   background-size:auto;
   background-attachment:fixed;
-  /*background-position:center;*/
+  background-position:center;
   background-repeat:repeat;
 }
 

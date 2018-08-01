@@ -1,8 +1,6 @@
 {% extends "layout.html" %}
 {% block head %}
   {{ super() }}
-  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.35155ed6aa6e065422c11b2526f1caf9.js"></script>
-  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.35155ed6aa6e065422c11b2526f1caf9.js"></script>
 {% endblock head %}
 
 {% block content %}
@@ -54,6 +52,14 @@ server</strong></a>!
     </div>
 
 
-<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.bed9e19e565ca3b578705de9e73c29ed.html?origin=https%3A%2F%2Ftoonkit.net&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
-<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.bed9e19e565ca3b578705de9e73c29ed.html?origin=https%3A%2F%2Ftoonkit.net&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.bed9e19e565ca3b578705de9e73c29ed.html?origin=https%3A%2F%2Ftoonkit.net&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe>
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.bed9e19e565ca3b578705de9e73c29ed.html?origin=https%3A%2F%2Ftoonkit.net&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe>
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
+<!-- </body></html> -->
 {% endblock content %}
+{% block js %}
+  {{ super() }}
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.35155ed6aa6e065422c11b2526f1caf9.js"></script>
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.35155ed6aa6e065422c11b2526f1caf9.js"></script>
+{% endblock js %}
