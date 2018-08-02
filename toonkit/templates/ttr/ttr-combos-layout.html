@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/combos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/zach.css') }}">
 {% endblock head %}
 <!-- Override header in order to hide it. -->
 {% block header %}{% endblock header %} 
@@ -15,7 +16,7 @@
   <div class="inner"></div>
   <div class="container">
     <h1>Toontown Gag Combo Generator</h1>
-    <form method=post action="/combos">
+    <form method=post action="{{ url_for('ttr_combos') }}">
       <!-- {{ form.csrf_token }} -->
       {{ form.hidden_tag() }}
       <fieldset class="form-group">

@@ -14,25 +14,35 @@ def home():
 def staff():
     return render_template('staff.html', title='Staff')
 
-@app.route("/clash-faq", methods=['GET'])
-def clash_faq():
-    return render_template('clash-faq.html', title='Clash FAQ')
-
 @app.route("/speedrunning-faq", methods=['GET'])
 def speedrunning_faq():
     return render_template('speedrunning-faq.html', title='Speedrunning FAQ')
 
-@app.route("/cc-status", methods=['GET'])
+# Corporate Clash routes
+@app.route("/corporate-clash", methods=['GET'])
+def cc_home():
+    return render_template('index.html', title='Corporate Clash')
+
+@app.route("/corporate-clash/faq", methods=['GET'])
+def cc_faq():
+    return render_template('cc/cc-faq.html', title='Clash FAQ')
+
+@app.route("/corporate-clash/status", methods=['GET'])
 def cc_status():
-    return render_template('cc-status.html', title='CC Status')
+    return render_template('cc/cc-status.html', title='CC Status')
 
-@app.route("/cc-tracker", methods=['GET'])
+@app.route("/corporate-clash/tracker", methods=['GET'])
 def cc_inv_tracker():
-    return render_template('cc-tracker.html', title='CC Invasions')
+    return render_template('cc/cc-tracker.html', title='CC Invasions')
 
 
-@app.route("/combos", methods=['GET', 'POST'])
-def combos():
+# TT Rewritten routes
+@app.route("/rewritten", methods=['GET'])
+def ttr_home():
+    return render_template('index.html', title='Rewritten')
+
+@app.route("/rewritten/combos", methods=['GET', 'POST'])
+def ttr_combos():
     form = BattleForm()
     print(request.form)
     if form.validate_on_submit():
@@ -52,9 +62,9 @@ def combos():
                     print("\n\n_____________COMBO IS MISSING_____________\n\n")
                     return render_template('combos_select_layout.html', title='Layout', form=form)
             cog = Cog.query.filter_by(id=form.sel_cog_lvl.data).first()
-            return render_template('combos.html', title='Combos', form=form, combos=combos,
+            return render_template('ttr/ttr-combos.html', title='Combos', form=form, combos=combos,
                                        cog=cog)#, wider=wider, taller=taller)
-            
+
         # Database does not contain entries for lured combos where
         # lured makes no diference, i.e when there is no knockback dmg.
         is_lured = True if form.sel_lured.data and form.sel_track.data in {'throw', 'squirt'} else False
@@ -67,14 +77,14 @@ def combos():
             combos.append(query_c)
             print("\n", combos, "\n")
             cog = Cog.query.filter_by(id=form.sel_cog_lvl.data).first()
-            return render_template('combos.html', title='Combos', form=form, combos=combos,
+            return render_template('ttr/ttr-combos.html', title='Combos', form=form, combos=combos,
                                    cog=cog)#, wider=wider, taller=taller)
         else:
             print("\n\n_____________COMBO IS MISSING_____________\n\n")
         print(form.errors)
-        return render_template('combos_select_layout.html', title='Combos', form=form)
+        return render_template('ttr/ttr-combos-layout.html', title='Combos', form=form)
     print(form.errors)
-    return render_template('combos_select_layout.html', title='Combos', form=form)
+    return render_template('ttr/ttr-combos-layout.html', title='Combos', form=form)
 
 
 # For debugging, printing Jinja variables.
