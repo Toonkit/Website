@@ -1,48 +1,35 @@
-from toonkit import app, db
-from flask import render_template, request
+from flask import render_template, request, Blueprint
+from toonkit import db
 from toonkit.forms import BattleForm
 from toonkit.models import Gag, Combo, Cog
-from pprint import pprint
 
 
-@app.route("/", methods=['GET'])
-@app.route("/home", methods=['GET'])
-def home():
-    return render_template('index.html', title='Home')
-
-@app.route("/staff", methods=['GET'])
-def staff():
-    return render_template('staff.html', title='Staff')
-
-@app.route("/speedrunning-faq", methods=['GET'])
-def speedrunning_faq():
-    return render_template('speedrunning-faq.html', title='Speedrunning FAQ')
-
-# Corporate Clash routes
-@app.route("/corporate-clash", methods=['GET'])
-def cc_home():
-    return render_template('index.html', title='Corporate Clash')
-
-@app.route("/corporate-clash/faq", methods=['GET'])
-def cc_faq():
-    return render_template('cc/cc-faq.html', title='Clash FAQ')
-
-@app.route("/corporate-clash/status", methods=['GET'])
-def cc_status():
-    return render_template('cc/cc-status.html', title='CC Status')
-
-@app.route("/corporate-clash/tracker", methods=['GET'])
-def cc_inv_tracker():
-    return render_template('cc/cc-tracker.html', title='CC Invasions')
-
+ttr = Blueprint('ttr', __name__, url_prefix="/rewritten")
 
 # TT Rewritten routes
-@app.route("/rewritten", methods=['GET'])
-def ttr_home():
-    return render_template('index.html', title='Rewritten')
+@ttr.route("/home")
+@ttr.route("/", methods=['GET'])
+def home():
+    return render_template('ttr/ttr-home.html', title='Toontown Rewritten')
 
-@app.route("/rewritten/combos", methods=['GET', 'POST'])
-def ttr_combos():
+@ttr.route("/support", methods=['GET'])
+def support():
+    return render_template('ttr/ttr-faq.html', title='Support')
+
+@ttr.route("/leaderboard", methods=['GET'])
+def leaderboard():
+    return render_template('ttr/ttr-leaderboard.html', title='Leaderboard')
+
+@ttr.route("/status", methods=['GET'])
+def status():
+    return render_template('ttr/ttr-status.html', title='Status')
+
+@ttr.route("/tracker", methods=['GET'])
+def inv_tracker():
+    return render_template('ttr/ttr-tracker.html', title='Invasions')
+
+@ttr.route("/combos", methods=['GET', 'POST'])
+def combos():
     form = BattleForm()
     print(request.form)
     if form.validate_on_submit():
@@ -85,11 +72,3 @@ def ttr_combos():
         return render_template('ttr/ttr-combos-layout.html', title='Combos', form=form)
     print(form.errors)
     return render_template('ttr/ttr-combos-layout.html', title='Combos', form=form)
-
-
-# For debugging, printing Jinja variables.
-@app.context_processor
-def utility_functions():
-    def print_in_console(message):
-        print(str(message))
-    return dict(mdebug=print_in_console)
