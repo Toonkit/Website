@@ -14,7 +14,7 @@ class Combo(db.Model):
     gags = db.relationship('Gag', backref='c', lazy=True)
     def __repr__(self):
         # return f"{self.gags}"
-        return f"Combo({self.num_toons} Toons, lvl {self.cog_lvl} Cog,'{self.track}', {self.damage} damage, stun='{self.stun_track}', lured='{self.lured}')"
+        return "Combo({} Toons, lvl {} Cog,'{}', {} damage, stun='{}', lured='{}')".format(self.num_toons, self.cog_lvl, self.track, self.damage, self.stun_track, self.lured)
 
 
 class Gag(db.Model):
@@ -28,7 +28,7 @@ class Gag(db.Model):
     # gag_combo = db.relationship('Combo', secondary=combos, backref=db.backref('gags', lazy='dynamic'))
     
     def __repr__(self):
-        return f"Gag('{self.name}', lvl {self.lvl}, '{self.track}', org={self.org})"
+        return "Gag('{}', lvl {}, '{}', org={})".format(self.name, self.lvl, self.track, self.org)
 
 class Cog(db.Model):
     id = db.Column(db.Integer, primary_key=True)

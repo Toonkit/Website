@@ -5,5 +5,15 @@
 {% endblock head %}
 
 {% block content %}
-    <h1>Toontown Rewritten Home</h1>
+  <h1>Toontown Rewritten Home</h1>
+
+
+  <th style="width: 50%;">
+    <a href="https://www.toontownrewritten.com/">
+      <img src="{{ url_for('static', filename='images/ttrlogo.png') }}" style="width:60%"></img>
+    </a>
+  </th>
+  <td>
+    <a class="twitter-timeline" data-width="500" data-height="600" data-tweet-limit=3 href="https://twitter.com/TT_Rewritten?ref_src=twsrc%5Etfw">Tweets by TT_Rewritten</a>
+  </td>
 {% endblock content %}

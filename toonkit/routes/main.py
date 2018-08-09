@@ -7,7 +7,6 @@ main = Blueprint('main', __name__)
 @main.route("/", methods=['GET'])
 @main.route("/home", methods=['GET'])
 def home():
-    print(dir(request))
     return render_template('index.html', title='Home')
 
 @main.route("/staff", methods=['GET'])
