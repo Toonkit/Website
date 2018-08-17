@@ -23,8 +23,7 @@
   <div class="container">
     <h1>Toontown Gag Combo Generator</h1>
     <form method=post action="{{ url_for('ttr.combos') }}">
-      <!-- {{ form.csrf_token }} -->
-      {{ form.hidden_tag() }}
+      {{ form.hidden_tag() }} <!-- Includes CSRF protection -->
       <fieldset class="form-group">
 
         <script>
