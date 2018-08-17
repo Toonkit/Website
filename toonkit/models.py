@@ -10,7 +10,7 @@ class Combo(db.Model):
     damage = db.Column(db.Integer, nullable=False)
     lured = db.Column(db.Boolean, nullable=False, default=False)
     track = db.Column(db.String(20), nullable=False)
-    stun_track = db.Column(db.String(20), nullable=False, default='')
+    stun_track = db.Column(db.String(20), default='')
     gags = db.relationship('Gag', backref='c', lazy=True)
     def __repr__(self):
         # return f"{self.gags}"
