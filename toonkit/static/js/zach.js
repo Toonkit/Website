@@ -1,9 +1,10 @@
 $(document).ready(() => {
     var swapNavs = (showing, hidden) => {
         $(showing).slideUp();
+        // $(hidden).css('display') = 'table-cell';
         window.setTimeout(() => {
             $(hidden).slideDown();
-        }, 200);
+        }, 400);
     };
 
     $('#cclogo').on('click', () => {
