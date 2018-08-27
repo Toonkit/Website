@@ -20,20 +20,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   background: #ffffff;
-  /*padding: 10px 20px;*/
+  padding: 2%;
   border: 1px solid #dddddd;
-  border-radius: 3px;
+  border-radius: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
+.gag-row {
+  position: relative;
+  display: flex;
+  flex: wrap;
+  /*margin-left: 2%;
+  margin-right: 2%;*/
+}
+
 .gag-card {
-  height: 135px;
-  width: 110px;/*6rem;*/
-  margin: 15px;
-  border-radius: 2px;
+  height: 125px;
+  width: 115px;/*6rem;*/
+  margin-right: 25px;
+  border-radius: 10px;
   border: 2px solid;
   position: relative;
-  align-items: center;
+  /*align-items: center;*/
   text-align: center;
 }
 .gag-card > img {
@@ -47,12 +56,12 @@ h1, h2, h3, h4, h5, h6 {
   /*text-align: center;*/
   line-height: 20px;
   position: absolute;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
-  padding-bottom: 0.2em;
+  /*padding-left: 0.1em;
+  padding-right: 0.1em;
+  padding-bottom: 0.2em;*/
   bottom: 0;
-  margin-left: 1px;
-  margin-right: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
   margin-bottom: 5px;
   color:#000000;
   font-size: 0.85em;
@@ -195,6 +204,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #row-3 > label {
   width: 89px;
+}
+#row-1, #row-2, #row-3 {
+  margin-bottom: 15px;
 }
 
 .black-background {background-color:#000000;}
