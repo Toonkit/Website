@@ -1,33 +1,44 @@
 {% extends "ttr/ttr-combos-layout.html" %}
-{% block content %}
+{% block more %}
   {% for combo in combos %}
     <div class="container">
-      <div class="row">
-        <!-- Determine how to style the gag img based on if it's width or height is bigger,
-        using 2 supplied sets, wider and taller, listing all the gag img filenames. -->
-        {% for gag in combo.gags %}
-          <!-- {# gag_fn represents gag filename ex: 'Birthday_Cake.png' #}
+      <div class="gag-row">
+      {% for gag in combo.gags %}
+        <div class="gag-card {{ gag.track.capitalize() }}">
+          <!-- {# gag_fn represents gag filename ex: 'Birthday_Cake.png' #} -->
           {% set gag_fn  = gag.name.replace(' ', '_') + '.png'%}
-          {% if gag_fn in wider %}
-            {% set img_class = 'gag-img-wide' %}
-          {% elif gag_fn in taller %}
-            {% set img_class = 'gag-img-tall' %}
-          {% else %}
-            <h2>WELL THAT'S ODD</h2>
-            {% set img_class = 'gag-img-wide' %}
-            <h2>{{ gag_fn }}</h2>
-          {% endif %} -->
-          <div class="gag-card {{ gag.track.capitalize() }}">
-            <img class="{{ img_class }}" src="{{ url_for('static', filename='gag_icons/' +
-            gag_fn) }}">
-            <p>{{ gag.name }}</p>
-          </div>
-        {% endfor %}
-        <div class="center">
-          <p>Cog HP: <b>{{ cog.hp }}</b></p>
-          <p>Damage: <b>{{ combo.damage }}</b></p>
+          <img class="{{ img_class }}" src="{{ url_for('static', filename='gag_icons/' +
+          gag_fn) }}">
+          <p>{{ gag.name }}</p>
         </div>
+      {% endfor %}
+        <div id="combo-info" class="gag-card">
+          <p>Cog HP
+          <br><b>{{ cog.hp }}</b>
+          <br>Damage
+          <br><b>{{ combo.damage }}</b>
+          </p>
+        </div>
+        <style>
+          #combo-info {
+            position: absolute;
+            right:0;
+            margin-right:0;
+            align-items: center;
+            vertical-align: middle;
+          }
+          #combo-info p {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            line-height: 25px;
+          }
+          #combo-info p b {
+            font-size: 16px;
+          }
+
+        </style>
       </div>
     </div>
   {% endfor %}
-{% endblock content %}
+{% endblock more %}

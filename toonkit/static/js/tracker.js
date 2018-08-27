@@ -23,20 +23,20 @@ function initDistricts() {
             var element = $("#districts")[0];
             var data = JSON.parse(xhttp.responseText);
             $.each(data, function(i, o) {
-                    var newElement = `<section id="${i%2==0?'card-left':'card-right'}" style="text-align:center">
+                    var newElement = `<div id="${i%2==0?'card-left':'card-right'}" style="text-align:center">
                 <h2>${o.name}</h3> 
               <h3><b style="color:${o.online?'#08cb08':'red'}">${o.online?'Online':'Offline'}</b></h3>
             <h3>${o.population} Toons</h3>
- </section>`;
+ </div>`;
                     element.insertAdjacentHTML('beforeend', newElement);
             });
              //element = $("#servers")[0];
             //$.each(data, function(i, o) {
-              //      var newElement = `<section id="card">
+              //      var newElement = `<div id="card">
                // <h2>${o.name}</h3> 
               //<h3><b color="${o.online?'green':'red'">${o.online?'Online':'Offline'}</b></h3>
             //<h3>${o.population} Toons</h2>
-// </section>`;
+// </div>`;
   //                  element.insertAdjacentHTML('beforeend', newElement);
     //        });
         }
@@ -53,12 +53,12 @@ function initInvasions() {
             $.each(data, function(i, o) {
                 if (o.cogs_attacking != 'None' && Math.round(o.remaining_time)!=0) {
                     noinv = false;
-                    var newElement = `<section id="${indx%2==0?'card-left':'card-right'}">
+                    var newElement = `<div id="${indx%2==0?'card-left':'card-right'}">
 <img draggable="false" class="cog" src="https://raw.githubusercontent.com/Toonkit/Website/master/assets/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
                 <h2>${o.cogs_attacking}</h2>
                 <h3>${o.name}</h3>
                 <p style="font-size:12px">${o.count_total-o.count_defeated}/${o.count_total} Cogs | <b>${Math.round(o.remaining_time/60)}</b> minutes remaining</p>
- </section>`;
+ </div>`;
                     element.insertAdjacentHTML('beforeend', newElement);
                     indx++;
                 }

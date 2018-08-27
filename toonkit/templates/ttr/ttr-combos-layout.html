@@ -1,12 +1,7 @@
 {% extends "layout.html" %}
 {% block head %}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- My CSS -->
+    {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/combos.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/zach.css') }}">
 
     {% if title %}
         <title>{{ title }} | Toonkit </title>
@@ -19,7 +14,6 @@
 
 {% block content %}
   {{ super() }}
-  <div class="inner"></div>
   <div class="container">
     <h1>Toontown Gag Combo Generator</h1>
     <form method=post action="{{ url_for('ttr.combos') }}">
@@ -47,64 +41,51 @@
           {% endfor %}
         </div>
 
-        <div class="intro">
-          <div id="row-2" class="btn-group-toggle" data-toggle="buttons">
-            {% for subfield in form.sel_track %}
-              <script>console.log('{{ subfield.label.text }}')</script>
-              <label class="btn btn-outline-primary {{ subfield.label.text }}">
-                {% if subfield.checked %}
-                  {{ subfield }} {{ subfield.label }}
-                  <script>makeActive("{{ subfield.id }}")</script>
-                {% else %}
-                  {{ subfield }} {{ subfield.label }}
-                {% endif %}
-              </label>
-            {% endfor %}
+        <div id="row-2" class="btn-group-toggle" data-toggle="buttons">
+          {% for subfield in form.sel_track %}
+            <script>console.log('{{ subfield.label.text }}')</script>
+            <label class="btn btn-outline-primary {{ subfield.label.text }}">
+              {% if subfield.checked %}
+                {{ subfield }} {{ subfield.label }}
+                <script>makeActive("{{ subfield.id }}")</script>
+              {% else %}
+                {{ subfield }} {{ subfield.label }}
+              {% endif %}
+            </label>
+          {% endfor %}
 
-            <div style="display: inline-block"></div>
-            <div style="display: inline-block"></div>
-            <div style="display: inline-block"></div>
-            
-            {% with subfield = form.sel_lured %}
-              <label class="btn btn-outline-primary {{ subfield.label.text }}">
-                {% if subfield.data %}
-                  {{ subfield }} {{ subfield.label }}
-                  <script>makeActive("{{ subfield.id }}")</script>
-                {% else %}
-                  {{ subfield }} {{ subfield.label }}
-                {% endif %}
-              </label>
-            {% endwith %}
-          </div>
-
-          <div class="intro">
-            <div id="row-3" class="btn-group-toggle" data-toggle="buttons">
-              {% for subfield in form.sel_num_toons %}
-                <script>console.log('{{ subfield.label.text }}')</script>
-                <label class="btn btn-outline-primary {{ subfield.label.text }}">
-                  {% if subfield.checked %}
-                    {{ subfield }} {{ subfield.label }}
-                    <script>makeActive("{{ subfield.id }}")</script>
-                  {% else %}
-                    {{ subfield }} {{ subfield.label }}
-                  {% endif %}
-                </label>
-              {% endfor %}
-            </div>
-          </div>
+          <!-- Separator for Lured button -->
+          <div style="display: inline-block"></div>
+          <div style="display: inline-block"></div>
+          <div style="display: inline-block"></div>
+          
+          {% with subfield = form.sel_lured %}
+            <label class="btn btn-outline-primary {{ subfield.label.text }}">
+              {% if subfield.data %}
+                {{ subfield }} {{ subfield.label }}
+                <script>makeActive("{{ subfield.id }}")</script>
+              {% else %}
+                {{ subfield }} {{ subfield.label }}
+              {% endif %}
+            </label>
+          {% endwith %}
         </div>
 
-        
-          {{ form.submit(class="btn btn-outline-info my-submit-button", value="One Shot the Cog") }}
-
-          <!-- <div style="display: inline-block"></div> -->
-
-          <!-- {{ form.sel_track(class="btn btn-outline-info") }} -->
-          
-          <!-- <div style="display: inline-block"></div> -->
-
-          <!-- {{ form.sel_num_toons(class="btn btn-outline-info") }} -->
-        <!-- </div> -->
+        <div id="row-3" class="btn-group-toggle" data-toggle="buttons">
+          {% for subfield in form.sel_num_toons %}
+            <script>console.log('{{ subfield.label.text }}')</script>
+            <label class="btn btn-outline-primary {{ subfield.label.text }}">
+              {% if subfield.checked %}
+                {{ subfield }} {{ subfield.label }}
+                <script>makeActive("{{ subfield.id }}")</script>
+              {% else %}
+                {{ subfield }} {{ subfield.label }}
+              {% endif %}
+            </label>
+          {% endfor %}
+        </div>
+        <!-- "One Shot the Cog" Submit Button -->
+        {{ form.submit(class="btn btn-outline-info my-submit-button", value="One Shot the Cog") }}
       </fieldset>
     </form>
   </div>
