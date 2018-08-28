@@ -1,44 +1,29 @@
 {% extends "layout.html" %}
-{% block head %}
-  {{ super() }}
-  <style id="__web-inspector-hide-shortcut-style__" type="text/css">.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after{visibility: hidden !important;}
-  </style>
-{% endblock %}
 
 {% block content %}
-<body style="background-image:url('https://i.imgur.com/Yg5xNdI.png');background-size: cover;background-repeat:  no-repeat;background-position-y: 200px;">
-    <div style="border-top-width: 0px;" id="content-wrapper">
-      <div class="inner clearfix" style="">
-        <section id="main-content" style="width: 1000px; padding-bottom:5%; left:50; position: relative; background:#ffffffc7;">
-          <h1>Invasions Tracker</h1>
-          <p></p>
-          <div class="alert alert-note">
-            <strong>Note</strong>
-              </div> This tracker uses API publicly provided by the Corporate Clash Team.
-                <a href="https://github.com/CorporateClash/api-docs">View it on GitHub</a>
-                <h3>This list automatically refreshes every minute.</h3>
-                <hr>
-                <div class="navbar">
-                  <a href="#">Current</a>
-                  <a href="#">Statistics</a>
-                </div>
-                <h2 id="noinv" style="text-align:center;display:none">Sorry, there aren't any invasions right now!</h2>
-                <div id="curinv"></div>
-        </section>
-    </div>
-    </div><b><b>
+<div class="main-content">
+  <h1>Invasions Tracker</h1>
+  <p></p>
+  <div class="alert">
+    <strong>Note</strong>
+  </div>
+  This tracker uses API publicly provided by the Corporate Clash Team.
+  <a href="https://github.com/CorporateClash/api-docs">View it on GitHub</a>
+  <h3>This list automatically refreshes every minute.</h3>
+  <h2 id="noinv" style="display:none; text-align:center;">Sorry, there aren't any invasions right now!</h2>
+  <div id="curinv"></div>
+</div>
 
-</b></b>
-    <div class="footer" id="footer" style="display: none;">This project has recently been opened! Send any suggestions or issues by<a href="https://discord.gg/5pr4mRN"><strong> joining our Discord server</strong></a>!
-        <button onclick="closeFooter()" float="right" style="
-    float: right;
-    color: black;
-    font-family: inherit;
-    /* border-radius: 10px; */
-    border: none;"><b>X</b></button>
-    </div>
+<style>
+  body {
+    background-image: url('https://i.imgur.com/Yg5xNdI.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 200px;
+  }
+</style>
 {% endblock content %}
 {% block js %}
   {{ super() }}
-  <script type="text/javascript" src="{{ url_for('static', filename='js/tracker.js') }}"></script>  }
+  <script type="text/javascript" src="{{ url_for('static', filename='js/tracker.js') }}"></script>
 {% endblock js %}

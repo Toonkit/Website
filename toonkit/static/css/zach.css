@@ -25,22 +25,26 @@ h1 {
 }
 
 #nav1, #nav2  {
-    display: flex;
+    /*display: flex;*/
     margin-left: 120px;
-    margin-right: 200px;;
+    margin-right: 20px;;
 }
 
 header div {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     background:#fafafa url(../images/header-bg.jpg) 0 0 repeat-x;
     padding-bottom: 30px;
 }
 
 header div img {
+    width: 40%;
     display: inline-block;
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 370px;
 }
 
 .navbar-nav > li {
@@ -51,9 +55,9 @@ header div img {
 #container-selected-server {
     position: absolute;
     display: table;
-    width: 300px;
+    width: 270px;
     text-align: center;
-    right: 10px;
+    right: 8px;
     margin-top: 7px;
 }
 
@@ -70,36 +74,30 @@ header div img {
     padding-top: 30px;
 }
 
-#main-content {
+.main-content {
     position: relative;
     margin: 5%;
     overflow:hidden;
-
     padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
     border-radius: 20px;
-
-
-    /*margin-bottom: 100px;*/
     box-shadow: 0px 0px 20px 2px lightgrey;
-    /*Original Box Shadow*/
-    /*box-shadow: -8px 0px 20px 0px lightgrey;*/
+    background: #fdfdfd;
 }
 
-#main-content h1 {
+.main-content h1 {
     /*margin-top: 0;
     margin-bottom: 0;
     font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;*/
     font-size: 2.8em;
     font-weight: normal;
     color: #474747;
-    text-indent: 6px;
-    letter-spacing: -1px;
+    text-align: center;
 }
 
-#main-content h1:before {
+.main-content h1:before {
     padding-right: 0.3em;
     margin-left: -0.9em;
     color: #9ddcff;
@@ -127,20 +125,13 @@ header div img {
 
 
 #toonkit-logo {
-    /*padding-left:5px;
-    padding-right:5px;
-    height:auto;
-    width:auto;
-    max-height:40px;
-    max-width:220px;*/
-
-
     position:absolute;
     height:auto;
     width:auto;
     max-height:40px;
     top: 30px;
-    left: 12px;
+    left: 10px;
+    z-index: 1;
 }
 
 #cclogo {
@@ -150,8 +141,9 @@ header div img {
     width:auto;
     max-height:75px;
     top: 5px;
-    right: 175px;
+    right: 150px;
     cursor: pointer;
+    z-index: 1;
 }
 
 #ttrlogo {
@@ -162,8 +154,8 @@ header div img {
     max-height:90px;
     top: -5px;
     right: 0px;
-
     cursor: pointer;
+    z-index: 1;
 }
 
 
@@ -203,4 +195,15 @@ img.cog {
     float: left;
     margin-right: 15%;
     margin-top: 10%;
+}
+
+.alert {
+    padding: 2px;
+    margin-bottom: 2px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 11px;
+    color: #FFFFFF;
+    background-color: #FF2323;
 }
