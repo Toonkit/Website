@@ -5,7 +5,7 @@
 {% endblock head %}
 
 {% block content %}
-  <div class="main-content">
+  <div id="main" class="main-content">
     <h1>Toonkit Contributors</h1>
     <!-- Vice -->
     <div class="contributor">
@@ -33,26 +33,25 @@
       <div class="main-content">
         <h1>Contributor - Zach</h1>
         <h2>Pythonista / Backend / Web Development</h2>
-        <p><b>Zach</b>, also known as zzzachzzz, is a contributor of Toonkit.und Discord as Bin#7773, is a founder of Toonkit. His main interests are software development, game design, cybersecurity, and cryptography. His primary language is English, born in the United States. He prefers to </p>
+        <p><b>Zach</b>, also known as zzzachzzz, is a contributor of Toonkit.</p>
         <a href="https://github.com/zzzachzzz"><i class="fab fa-github fa-1.5x" style="color:black"></i></a>
       </div>
     </div>
   </div>
 
 <style>
+  #main {
+    padding-top: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
   .contributor {
-
-    display: inline-block;
-    /*flex-direction: row;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100%;*/
-    height: 100%;
-    /*position: relative;*/
-    overflow: hidden;
   }
   .contributor div {
-     float: right;
      width: 68%;
      margin: 2%;
   }
@@ -61,8 +60,6 @@
     display: inline-block;
     width: 200px;
     height: 200px;
-    float: left;
-    /*transform: translateY(25%);*/
   }
 </style>
 {% endblock content %}
