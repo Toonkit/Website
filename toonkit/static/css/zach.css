@@ -154,16 +154,16 @@ header div img {
 
 /*FROM STYLE.CSS*/
 
-#card-left {
-    margin-top: 20px;
-    float: left;
+.cog-card {
+    margin: 5%;
     width: 40%;
     padding-left: 2%;
     padding-right: 2%;
     box-shadow: 0px 0px 20px 2px lightgrey;
-    border-radius: 30px;
+    border-radius: 20px;
+    justify-content: center;
 }
-
+/*
 #card-right {
     margin-top: 20px;
     float: right;
@@ -173,7 +173,7 @@ header div img {
     box-shadow: 0px 0px 20px 2px lightgrey;
     border-radius: 30px;
 }
-
+*/
 img.cog {
     position: relative;
     z-index: 1;
