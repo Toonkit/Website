@@ -1,8 +1,4 @@
 {% extends "layout.html" %}
-{% block head %}
-  {{ super() }}
-
-{% endblock head %}
 
 {% block content %}
   <div id="main" class="main-content">
@@ -12,9 +8,15 @@
       <img draggable="false" src="https://i.imgur.com/KAXiUwm.png">
       <div class="main-content">
         <h1>Admin - Vice</h1>
-        <h2>Founder, Web Development</h2>
-        <p><b>Vice</b>, also known as ViceWatercolour, is a founder of Toonkit. His main interests are music production, journalism, creative writing, and politics. His primary language is English, born and raised in the United States. </p>
-        <a href="https://github.com/Palmidence"><i class="fab fa-github fa-1.5x" style="color:black"></i></a> <a href="https://twitter.com/ViceWatercolour"><i class="fab fa-twitter fa-1.5x" style="color:#1FAEFF"></i></a>
+        <div class="pad-left">
+          <h2>Founder, Web Dev</h2>
+          <p><b>Vice</b>, also known as ViceWatercolour, is a founder of Toonkit. His main interests are music production, journalism, creative writing, and politics. His primary language is English, born and raised in the United States.</p>
+          <a href="https://github.com/Palmidence"><img width="24" height="24" src="../static/svg/github-icon.svg"></a>
+          <a href="https://discord.gg/ZrHKxuk" target="_blank" aria-label="Join the Discord!">
+            <img width="28" height="28" src="../static/svg/discord-icon.svg">
+          </a>
+          <b>Vice#4812</b>
+        </div>
       </div>
     </div>
     <!-- Bin -->
@@ -22,9 +24,15 @@
       <img draggable="false" src="https://i.imgur.com/jaXreg8.png">
       <div class="main-content">
         <h1>Admin - Bin</h1>
-        <h2>Founder, Web Development / Backend</h2>
-        <p><b>Bin</b>, known around Discord as Bin#7773, is a founder of Toonkit. His main interests are software development, game design, cybersecurity, and cryptography. His primary language is English, born in the United States. He prefers to remain largely anonymous online.</p>
-        <a href="https://github.com/FileStream"><i class="fab fa-github fa-1.5x" style="color:black"></i></a>
+        <div class="pad-left">
+          <h2>Founder, Web Dev / Backend</h2>
+          <p><b>Bin</b> is a founder of Toonkit. His main interests are software development, game design, cybersecurity, and cryptography. His primary language is English, born in the United States. He prefers to remain largely anonymous online.</p>
+          <a href="https://github.com/FileStream"><img width="24" height="24" src="../static/svg/github-icon.svg"></a>
+          <a href="https://discord.gg/ZrHKxuk" target="_blank" aria-label="Join the Discord!">
+            <img width="28" height="28" src="../static/svg/discord-icon.svg">
+          </a>
+          <b>Bin#7773</b>
+        </div>
       </div>
     </div>
     <!-- Zach -->
@@ -32,34 +40,36 @@
       <img draggable="false" src="{{ url_for('static', filename='images/staff/zach.png') }}">
       <div class="main-content">
         <h1>Contributor - Zach</h1>
-        <h2>Pythonista / Backend / Web Development</h2>
-        <p><b>Zach</b>, also known as zzzachzzz, is a contributor of Toonkit.</p>
-        <a href="https://github.com/zzzachzzz"><i class="fab fa-github fa-1.5x" style="color:black"></i></a>
+        <div class="pad-left">
+          <h2>Pythonista / Web Dev / Backend </h2>
+          <p><b>Zach</b> is a contributor of Toonkit.</p>
+          <a href="https://github.com/zzzachzzz"><img width="24" height="24" src="../static/svg/github-icon.svg"></a>
+          <a href="https://discord.gg/ZrHKxuk" target="_blank" aria-label="Join the Discord!">
+            <img width="28" height="28" src="../static/svg/discord-icon.svg">
+          </a>
+          <b>zzzachzzz#3989</b>
+        </div>
       </div>
     </div>
   </div>
 
-<style>
-  #main {
-    padding-top: 2%;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  .contributor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .contributor div {
-     width: 68%;
-     margin: 2%;
-  }
-  .contributor img {
-    vertical-align: middle;
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-  }
-</style>
+  <style>
+    .contributor {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .contributor > .main-content {
+      min-width: 70%
+    }
+
+    .contributor > img {
+      vertical-align: middle;
+      display: inline-block;
+      width: 170px;
+      height: 170px;
+      margin-right: 1%;
+    }
+  </style>
 {% endblock content %}

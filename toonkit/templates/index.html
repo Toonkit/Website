@@ -5,10 +5,14 @@
 
 {% block content %}
 <div class="main-content">
-  <h1 class="">Welcome to Toonkit!</h1>
-  <hr>
-  <p><b>About Us:</b> Founded in July 2018, Toonkit is the most convinent way to access Toontown resources anytime, anywhere. Toonkit was created in response to a lack of centralized material within the Toontown community, and providing the common goal of reliable, up-to-date resources.</p>
-  <p><b>Upcoming features:</b> Planning to be the central inter-server hub for all things Toontown is an ambitious task, and we know that! With cooperation from the Corporate Clash and Toontown Rewritten teams, some features we plan on adding to the website in the future include speedrun records, event announcements, and a wide variety of statistics.</p>
+  <div class="pad-left">
+    <h1 class="">Welcome to Toonkit!</h1>
+    <hr>
+    <h2>About Us:</h2>
+    <p>Founded in July 2018, Toonkit is the most convinent way to access Toontown resources anytime, anywhere. Toonkit was created in response to a lack of centralized material within the Toontown community, and providing the common goal of reliable, up-to-date resources.</p>
+    <h2>Upcoming features:</h2>
+    <p>Planning to be the central inter-server hub for all things Toontown is an ambitious task, and we know that! With cooperation from the Corporate Clash and Toontown Rewritten teams, some features we plan on adding to the website in the future include speedrun records, event announcements, and a wide variety of statistics.</p>
+  </div>
 </div>
 
 <!-- TWITTER AND FOOTER -->
@@ -58,6 +62,13 @@ recently been opened! Send any suggestions or issues by<a href="https://discord.
 <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.bed9e19e565ca3b578705de9e73c29ed.html?origin=https%3A%2F%2Ftoonkit.net&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe>
 <iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe> -->
 <!-- </body></html> -->
+<style>
+  body {
+    background-image: url(../static/images/dd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
 {% endblock content %}
 {% block js %}
   {{ super() }}
