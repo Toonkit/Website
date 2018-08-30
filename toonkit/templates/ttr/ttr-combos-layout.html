@@ -14,7 +14,7 @@
 
 {% block content %}
   {{ super() }}
-  <div class="container">
+  <div id="main" class="main-content">
     <h1>Toontown Gag Combo Generator</h1>
     <form method=post action="{{ url_for('ttr.combos') }}">
       {{ form.hidden_tag() }} <!-- Includes CSRF protection -->
@@ -31,11 +31,9 @@
         <div id="row-1" class="btn-group btn-group-toggle" data-toggle="buttons">
           {% for subfield in form.sel_cog_lvl %}
             <label class="btn btn-outline-primary cog-num">
+              {{ subfield }} {{ subfield.label }}
               {% if subfield.checked %}
-                {{ subfield }} {{ subfield.label }}
                 <script>makeActive("{{ subfield.id }}")</script>
-              {% else %}
-                {{ subfield }} {{ subfield.label }}
               {% endif %}
             </label>
           {% endfor %}
@@ -45,27 +43,18 @@
           {% for subfield in form.sel_track %}
             <script>console.log('{{ subfield.label.text }}')</script>
             <label class="btn btn-outline-primary {{ subfield.label.text }}">
+              {{ subfield }} {{ subfield.label }}
               {% if subfield.checked %}
-                {{ subfield }} {{ subfield.label }}
                 <script>makeActive("{{ subfield.id }}")</script>
-              {% else %}
-                {{ subfield }} {{ subfield.label }}
               {% endif %}
             </label>
           {% endfor %}
-
-          <!-- Separator for Lured button -->
-          <div style="display: inline-block"></div>
-          <div style="display: inline-block"></div>
-          <div style="display: inline-block"></div>
           
           {% with subfield = form.sel_lured %}
             <label class="btn btn-outline-primary {{ subfield.label.text }}">
+              {{ subfield }} {{ subfield.label }}
               {% if subfield.data %}
-                {{ subfield }} {{ subfield.label }}
                 <script>makeActive("{{ subfield.id }}")</script>
-              {% else %}
-                {{ subfield }} {{ subfield.label }}
               {% endif %}
             </label>
           {% endwith %}
@@ -75,11 +64,9 @@
           {% for subfield in form.sel_num_toons %}
             <script>console.log('{{ subfield.label.text }}')</script>
             <label class="btn btn-outline-primary {{ subfield.label.text }}">
+              {{ subfield }} {{ subfield.label }}
               {% if subfield.checked %}
-                {{ subfield }} {{ subfield.label }}
                 <script>makeActive("{{ subfield.id }}")</script>
-              {% else %}
-                {{ subfield }} {{ subfield.label }}
               {% endif %}
             </label>
           {% endfor %}

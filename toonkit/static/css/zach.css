@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 
-font-face {
-    font-family: "ImpressBT";
-    src: url(../font/ImpressBT.ttf) format("truetype");
+html, body {
+    min-height: 100%;
+    min-width: 100%;
 }
 
 body {
@@ -18,19 +18,14 @@ body {
 .my-container {
     display: flex;
     justify-content: center;
+    margin-bottom:80px;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Architects Daughter', cursive;
 }
 
-
-.nav {
-    background-color: #333;
-}
-
 #nav1, #nav2  {
-    /*display: flex;*/
     margin-left: 120px;
     margin-right: 20px;;
 }
@@ -57,37 +52,10 @@ header div img {
   margin-right:20px;*/
 }
 
-#container-selected-server {
-    position: absolute;
-    display: table;
-    width: 270px;
-    text-align: center;
-    right: 8px;
-    margin-top: 7px;
-}
-
-.selected-server {
-    /*font-family: "Bowlby One SC",Arial,Roboto,Helvetica,sans-serif;*/
-    font-family: 'Architects Daughter', cursive;
-    color: #f9db23;
-    font-size: 1.6em;
-    font-weight: 500;
-    margin-bottom: 0px;
-}
-
-#content-wrapper {
-    padding-top: 30px;
-}
-
 .main-content {
-    max-width: 1150px;
-    position: relative;
+    max-width: 1000px;
     margin: 5%;
-    overflow:hidden;
     padding: 3%;
-    /*padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;*/
     border-radius: 20px;
     box-shadow: 0px 0px 20px 2px lightgrey;
     background: #fdfdfd;
@@ -104,10 +72,20 @@ header div img {
 }
 
 .main-content h1:before {
-    padding-right: 0.3em;
-    margin-left: -0.9em;
+    padding-right: 0.2em;
+    margin-left: -1.2em;
     color: #9ddcff;
     content: "/";
+}
+.main-content h2:before {
+    padding-right: 0.2em;
+    margin-left: -1.2em;
+    color: #9ddcff;
+    content: "//";
+}
+
+.pad-left {
+    padding-left: 40px;
 }
 
 .center {
@@ -117,18 +95,9 @@ header div img {
     width: 50%;
 }
 
-.inner {
-    display: block;
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-}
-
-
-.ttr {
-    display: none;
-}
-
+/*Let Javascript handle setting display*/
+.cc {display: list-item;}
+.ttr {display: none;}
 
 #toonkit-logo {
     position:absolute;
@@ -164,11 +133,22 @@ header div img {
     z-index: 1;
 }
 
-
+/*Grey Hover*/
 #cclogo:hover,
 #ttrlogo:hover {
-    -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
+    /*-webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);*/
     filter:drop-shadow(3px 3px 0 rgba(255, 255, 255, 0.67)) drop-shadow(-3px -3px 0 rgba(255, 255, 255, 0.67));
+}
+/*Yellow Clicked*/
+#cclogo:active,
+#ttrlogo:active {
+    filter:drop-shadow(3px 3px 0 rgba(255, 255, 0, 1)) drop-shadow(-3px -3px 0 rgba(255, 255, 0, 1));
+
+}
+/*White Selected*/
+#cclogo.selected,
+#ttrlogo.selected {
+    filter:drop-shadow(3px 3px 0 rgba(255, 255, 255, 0.85)) drop-shadow(-3px -3px 0 rgba(255, 255, 255, 0.85));
 }
 
 

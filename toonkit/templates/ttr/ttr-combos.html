@@ -1,7 +1,7 @@
 {% extends "ttr/ttr-combos-layout.html" %}
 {% block more %}
   {% for combo in combos %}
-    <div class="container">
+    <div class="main-content">
       <div class="gag-row">
       {% for gag in combo.gags %}
         <div class="gag-card {{ gag.track.capitalize() }}">

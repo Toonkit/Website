@@ -54,7 +54,7 @@ function initInvasions() {
                 if (o.cogs_attacking != 'None' && Math.round(o.remaining_time)!=0) {
                     noinv = false;
                     var newElement = `<div id="${indx%2==0?'card-left':'card-right'}">
-<img draggable="false" class="cog" src="https://raw.githubusercontent.com/Toonkit/Website/master/assets/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
+<img draggable="false" class="cog" src="http://localhost:5000/static/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
                 <h2>${o.cogs_attacking}</h2>
                 <h3>${o.name}</h3>
                 <p style="font-size:12px">${o.count_total-o.count_defeated}/${o.count_total} Cogs | <b>${Math.round(o.remaining_time/60)}</b> minutes remaining</p>
@@ -67,6 +67,13 @@ function initInvasions() {
                 $("#noinv").show();
             else 
                 $("#noinv").hide();
+            $(".cog").on("error", function() { // Use Cog silhouette image if regular image missing
+                $(this).attr('src', '192.168.1.34:5000/static/images/cogs/1_unknown_cog.png');
+            }
         }
     };
 }
+
+// <img draggable="false" class="cog" src="http://localhost:5000/static/images/cogs/1_unknown_cog.png">
+// <img draggable="false" class="cog" src="http://localhost:5000/static/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
+// <img draggable="false" class="cog" src="https://raw.githubusercontent.com/Toonkit/Website/master/assets/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
