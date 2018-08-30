@@ -3,15 +3,16 @@
 {% block content %}
 <div class="main-content">
   <h1>Invasions Tracker</h1>
-  <p></p>
   <div class="alert">
     <strong>Note</strong>
   </div>
   This tracker uses API publicly provided by the Corporate Clash Team.
   <a href="https://github.com/CorporateClash/api-docs">View it on GitHub</a>
   <h3>This list automatically refreshes every minute.</h3>
-  <h2 id="noinv" style="display:none; text-align:center;">Sorry, there aren't any invasions right now!</h2>
-  <div id="curinv"></div>
+  <h2 id="noinv" style="display: none;">Sorry, there aren't any invasions right now!</h2>
+  <div id="curinv">
+    <!-- Invasion cards inserted here by cc-tracker.js -->
+  </div>
 </div>
 
 <style>
@@ -21,9 +22,17 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  /*#noinv {
+    text-align: center;
+  }*/
+  #curinv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 </style>
 {% endblock content %}
 {% block js %}
   {{ super() }}
-  <script type="text/javascript" src="{{ url_for('static', filename='js/tracker.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/cc-tracker.js') }}"></script>
 {% endblock js %}
