@@ -3,6 +3,22 @@
 {% block content %}
   <div id="main" class="main-content">
     <h1>Toonkit Contributors</h1>
+    <!-- Zach -->
+    <div class="contributor">
+      <img draggable="false" src="{{ url_for('static', filename='images/staff/zach.png') }}">
+      <div class="main-content">
+        <h1>Contributor - Zach</h1>
+        <div class="pad-left">
+          <h2>Pythonista / Web Dev / Backend </h2>
+          <p><b>Zach</b> is a contributor of Toonkit. Questions about Toonkit's codebase and contributing to the site should be directed to Zach through the Toonkit Discord.</p>
+          <a href="https://github.com/zzzachzzz"><img width="24" height="24" src="../static/svg/github-icon.svg"></a>
+          <a href="https://discord.gg/ZrHKxuk" target="_blank" aria-label="Join the Discord!">
+            <img width="28" height="28" src="../static/svg/discord-icon.svg">
+          </a>
+          <b>zzzachzzz#3989</b>
+        </div>
+      </div>
+    </div>
     <!-- Vice -->
     <div class="contributor">
       <img draggable="false" src="https://i.imgur.com/KAXiUwm.png">
@@ -35,41 +51,5 @@
         </div>
       </div>
     </div>
-    <!-- Zach -->
-    <div class="contributor">
-      <img draggable="false" src="{{ url_for('static', filename='images/staff/zach.png') }}">
-      <div class="main-content">
-        <h1>Contributor - Zach</h1>
-        <div class="pad-left">
-          <h2>Pythonista / Web Dev / Backend </h2>
-          <p><b>Zach</b> is a contributor of Toonkit.</p>
-          <a href="https://github.com/zzzachzzz"><img width="24" height="24" src="../static/svg/github-icon.svg"></a>
-          <a href="https://discord.gg/ZrHKxuk" target="_blank" aria-label="Join the Discord!">
-            <img width="28" height="28" src="../static/svg/discord-icon.svg">
-          </a>
-          <b>zzzachzzz#3989</b>
-        </div>
-      </div>
-    </div>
   </div>
-
-  <style>
-    .contributor {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-    .contributor > .main-content {
-      min-width: 70%
-    }
-
-    .contributor > img {
-      vertical-align: middle;
-      display: inline-block;
-      width: 170px;
-      height: 170px;
-      margin-right: 1%;
-    }
-  </style>
 {% endblock content %}

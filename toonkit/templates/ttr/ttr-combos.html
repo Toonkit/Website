@@ -12,32 +12,16 @@
           <p>{{ gag.name }}</p>
         </div>
       {% endfor %}
-        <div id="combo-info" class="gag-card">
-          <p>Cog HP
-          <br><b>{{ cog.hp }}</b>
-          <br>Damage
-          <br><b>{{ combo.damage }}</b>
-          </p>
+        <div class="combo-info">
+          <div class="damage">
+            <p><b>{{ combo.damage }}</b>
+            <br>Damage</p>
+          </div>
+          <div class="cog_hp">
+            <p><b>{{ cog.hp }}</b>
+            <br>Cog HP</p>
+          </div>
         </div>
-        <style>
-          #combo-info {
-            position: absolute;
-            right:0;
-            margin-right:0;
-            align-items: center;
-            vertical-align: middle;
-          }
-          #combo-info p {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            line-height: 25px;
-          }
-          #combo-info p b {
-            font-size: 16px;
-          }
-
-        </style>
       </div>
     </div>
   {% endfor %}

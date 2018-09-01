@@ -1,145 +1,22 @@
-﻿<html lang="en-US"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css?v=56a0505306d5abf93dbedeb06cd828a0d26b06f7" media="screen" type="text/css">
-    <link rel="stylesheet" href="assets/css/print.css" media="print" type="text/css">
-    <link rel="stylesheet" href="assets/css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+{% extends "layout.html" %}
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-<!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>404 | Toonkit</title>
-<meta name="generator" content="Jekyll v3.7.3">
-<meta property="og:title" content="Toonkit: 404">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="The page requested cannot be found.">
-<meta property="og:description" content="The page requested cannot be found.">
-<link rel="canonical" href="https://toonkit.net">
-<meta property="og:url" content="https://toonkit.net">
-<meta property="og:site_name" content="Toontown">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/scroll.js"></script>
-     <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction(element) {
-            var subarray = element.parentElement.getElementsByClassName('dropdown-content');
-            subarray[0].classList.toggle('show');
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-            var myDropdowns = document.getElementsByName("myDropdown");
-            for (var myDropdown of myDropdowns) {
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
-                }
-            }
-            if (e.target.matches('.dropbtn'))
-                myFunction(e.target);
-        }
-            function closeFooter() {
-            var foot = document.getElementById('footer');
-            foot.style.display = "none";
-        }
-    </script>
-<script type="application/ld+json">
-{"name":"Toontown","description":"The page requested cannot be found.","@type":"WebSite","url":"https://toonkit.net","headline":"Toontown: Corporate Clash Technical Issues FAQ","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-  </head>
-
-  <body onload="changeside()">
-            <div class="navbar">
-        <img src="assets/images/toonkit-logo.png" class="dropdown" height="5%" style="
-    padding-left: 5px;
-    padding-right: 5px;
-">
-        <a href="/">Home</a>
-        <a href="Staff">Staff</a>
-        <div class="dropdown">
-            <button class="dropbtn">Support
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" name="myDropdown">
-                <a href="Clash-FAQ">Corporate Clash FAQ</a>
-                <a href="#">Toontown Rewritten FAQ</a>
-            </div>
+{% block content %}
+<div class="main-content">
+  <div class="flex-row">
+    <img draggable="false" src="https://vignette.wikia.nocookie.net/toontown/images/4/44/Big_Wig_Level10.jpg/revision/latest?cb=20130331154405" width="250px" height="200px" style="margin-right: 50px;">
+    <div>
+      <h1>404: Page Not Found!</h1>
+      <p>We're sorry, but Toonkit was unable to display the proper page.
+        <br><b>Try:</b></p>
+      <ul>
+        <li>Checking the URL to make sure it's spelled correctly</li>
+      </ul>
+      <a href="{{ url_for('main.home') }}">
+        <div class="alert alert-violet">
+          <strong>» Back to the Homepage</strong>
         </div>
-        <div class="dropdown">
-            <button class="dropbtn">Speedrun
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" name="myDropdown">
-                <a href="Speedrunning-FAQ">Speedrunning FAQ</a>
-                <a href="#">Leaderboard: Corporate Clash</a>
-                <a href="#">Leaderboard: Rewritten</a>
-            </div>
-        </div>
+      </a>
     </div>
-    <header>
-      <div class="inner">
-        <a href="https://toonkit.net">
-          <h1><img src="assets/images/toonkit-logo.png"></h1>
-<h2>Oops!</h2>
-        </a>
-        
-        
-          <a href="https://github.com/Toonkit/Website" class="button"><small>View project on</small> GitHub</a>
-        
-        
-      </div>
-    </header>
-      
-      
-      
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-
-        <section class="main-content" style="
-    margin-top: 3%;
-    /* float: left; */
-    height: 40%;
-    margin-right: 10%;
-">
-    <img draggable="false" src="https://vignette.wikia.nocookie.net/toontown/images/4/44/Big_Wig_Level10.jpg/revision/latest?cb=20130331154405" width="250px" height="200px" style="position:relative;z-index: 1;float: left;margin-top: 8%;margin-right: 10%;">
-<div id="infobox" float="right">
-       <h1><a id="Error"></a>404: Page Not Found!</h1>
-<p><b>We're sorry,</b> but Toonkit was unable to display the proper page. Try:</p><ul>
-<li>Checking the URL to make sure it's spelled correctly</li>
-</ul>
-    <a href="https://toonkit.net" style="
-    float: right;
-    margin-right: 30%;
-"><div class="alert alert-blue"><strong style="
-    margin-left: 0px;
-">» Back to the Homepage</strong></div></a></div>
-       <br>
-</section></div>
-
-   </div><b><b>
-
-    
-  
-
-
-
-
-
-</b></b>
-  <div class="footer" id="footer">This project has recently been opened! Send any suggestions or issues by<a href="https://discord.gg/5pr4mRN"><strong> joining our Discord server</strong></a>!
-        <button onclick="closeFooter()" float="right" style="
-    float: right;
-    color: black;
-    font-family: inherit;
-    /* border-radius: 10px; */
-    border: none;
-                                                     "><b>X</b></button>
-    </div>
-
-
-</body></html>
+  </div>
+</div>
+{% endblock content %}

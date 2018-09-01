@@ -13,9 +13,8 @@
 {% block header %}{% endblock header %} 
 
 {% block content %}
-  {{ super() }}
   <div id="main" class="main-content">
-    <h1>Toontown Gag Combo Generator</h1>
+    <h1 class="pad-left">Gag Combo Generator</h1>
     <form method=post action="{{ url_for('ttr.combos') }}">
       {{ form.hidden_tag() }} <!-- Includes CSRF protection -->
       <fieldset class="form-group">
@@ -76,6 +75,16 @@
       </fieldset>
     </form>
   </div>
+
+  <style>
+    .main-content {
+      width: 80%;
+      max-width: 800px;
+    }
+    #main > h1 {
+      margin-bottom: 20px;
+    }
+  </style>
   {% block more %}
   {% endblock more %}
 
