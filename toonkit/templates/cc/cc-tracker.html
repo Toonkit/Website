@@ -2,13 +2,13 @@
 
 {% block content %}
 <div class="main-content">
-  <h1>Invasions Tracker</h1>
+  <h1 class="pad-left">Invasions Tracker</h1>
   <div class="alert">
     <strong>Note</strong>
   </div>
   This tracker uses API publicly provided by the Corporate Clash Team.
   <a href="https://github.com/CorporateClash/api-docs">View it on GitHub</a>
-  <h3>This list automatically refreshes every minute.</h3>
+  <h3 class="pad-left">This list automatically refreshes every minute.</h3>
   <h2 id="noinv" style="display: none;">Sorry, there aren't any invasions right now!</h2>
   <div id="curinv">
     <!-- Invasion cards inserted here by cc-tracker.js -->
@@ -17,18 +17,9 @@
 
 <style>
   body {
-    /*background-image: url('https://i.imgur.com/Yg5xNdI.png');*/
-    background-image: url("../static/images/dd.png");
+    background-image: url('https://i.imgur.com/Yg5xNdI.png');
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  /*#noinv {
-    text-align: center;
-  }*/
-  #curinv {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 </style>
 {% endblock content %}
