@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock head %}
+
+{% block content %}
+<div class="main-content">
+  <div class="pad-left">
+    <h1 class="">Welcome to Toonkit!</h1>
+    <hr>
+    <h2>About Us:</h2>
+    <p>Founded in July 2018, Toonkit is the most convinent way to access Toontown resources anytime, anywhere. Toonkit was created in response to a lack of centralized material within the Toontown community, and providing the common goal of reliable, up-to-date resources.</p>
+    <h2>Upcoming features:</h2>
+    <p>Planning to be the central inter-server hub for all things Toontown is an ambitious task, and we know that! With cooperation from the Corporate Clash and Toontown Rewritten teams, some features we plan on adding to the website in the future include speedrun records, event announcements, and a wide variety of statistics.</p>
+  </div>
+</div>
+
+<!-- TWITTER AND FOOTER -->
+<!-- <div class="tableholder" style="margin-top: 20%;">
+  <table>
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://corporateclash.net/">
+            <img src="{{ url_for('static', filename='images/cclogo.png') }}" style="width:60%;"></img>
+          </a>
+        </th>
+        <th style="width: 50%;">
+          <a href="https://www.toontownrewritten.com/">
+            <img src="{{ url_for('static', filename='images/ttrlogo.png') }}" style="width:60%"></img>
+          </a>
+        </th>
+      </tr>
+      <tr>
+        <td style="padding-top: 0px; position: relative; top: -293;">
+          <a class="twitter-timeline" data-width="500" data-height="600"  data-tweet-limit=3 href="https://twitter.com/CorporateClash?ref_src=twsrc%5Etfw" style="position: relative;bottom: 293">Tweets by CorporateClash</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </td>
+        <td>
+          <a class="twitter-timeline" data-width="500" data-height="600" data-tweet-limit=3 href="https://twitter.com/TT_Rewritten?ref_src=twsrc%5Etfw">Tweets by TT_Rewritten</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer" id="footer" style="display: none;">This project has 
+recently been opened! Send any suggestions or issues by<a href="https://discord.gg/5pr4mRN"><strong> joining our Discord server</strong></a>!
+  <button onclick="closeFooter()" float="right" style="
+    float: right;
+    color: black;
+    font-family: inherit;
+    /* border-radius: 10px; */
+    border: none;">
+    <b>X</b>
+  </button>
+</div>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.bed9e19e565ca3b578705de9e73c29ed.html?origin=https%3A%2F%2Ftoonkit.net&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe>
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.bed9e19e565ca3b578705de9e73c29ed.html?origin=https%3A%2F%2Ftoonkit.net&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe>
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe> -->
+<!-- </body></html> -->
+<style>
+  body {
+    background-image: url(../static/images/dd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
+{% endblock content %}
+{% block js %}
+  {{ super() }}
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.35155ed6aa6e065422c11b2526f1caf9.js"></script>
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.35155ed6aa6e065422c11b2526f1caf9.js"></script>
+{% endblock js %}

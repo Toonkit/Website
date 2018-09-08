@@ -1,3 +1,5 @@
 # Toonkit Website
 
-### More information coming soon! In the meantime, why not check out our [homepage](https://toonkit.net)?
+### From directory Toonkit-Website:
+### > python run.py
+### Visit localhost:5000 in your browser
