@@ -1,1 +1,0 @@
-web: gunicorn toonkit:app --log-file -
