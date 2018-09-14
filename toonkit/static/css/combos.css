@@ -1,7 +1,7 @@
 body {
-  background-image:url("../images/ddl.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image:url("../images/gags_pattern.png");
+  /*background-size: cover;*/
+  background-repeat: repeat;
 }
 
 /*.container {
