@@ -10,7 +10,8 @@ $(document).ready(function() {
 
 function updateStats() {
     $("#districts").html('');
-    xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
+    // xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
+    xhttp.open("GET", "https://corporateclash.net/api/v1/districts.js");
     xhttp.send();
 }
 

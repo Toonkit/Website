@@ -1,5 +1,5 @@
 var xhttp = new XMLHttpRequest();
-
+var once = false;
 $(document).ready(function() {
     if ($("#curinv")[0]) {
         initInvasions();
@@ -9,7 +9,8 @@ $(document).ready(function() {
 
 function updateStats() {
     $("#curinv").html('');
-    xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
+    // xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
+    xhttp.open("GET", "https://corporateclash.net/api/v1/districts.js");
     xhttp.send();
     setInterval(() => updateStats(), 60000);
 }
@@ -28,18 +29,18 @@ function initInvasions() {
                           <h2 style="text-align: center;">${o.cogs_attacking}</h3>
                           <div class="cog-card-inner">
                             <img draggable="false" class="cog" src="http://toonkit.net/static/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
-                            <div style="text-align: center;">
+                            <div style="text-align: center; width: 100%;">
                               <h3>${o.name}</h3>
                               <p style="font-size:12px;">${o.count_total-o.count_defeated} / ${o.count_total} Cogs<br/>
                                   <b>${Math.round(o.remaining_time/60)}</b> minutes remaining</p>
                             </div>
                           </div>
                         </div>`;
-                    element.insertAdjacentHTML('beforeend', newElement);
+                    // element.insertAdjacentHTML('beforeend', newElement);
                     // For testing purposes, duplicate elements to populate
-                    // for (i=0; i < 7; i++) {
-                    //     element.insertAdjacentHTML('beforeend', newElement);
-                    // }
+                    for (i=0; i < 1; i++) {
+                        element.insertAdjacentHTML('beforeend', newElement);
+                    }
                 }
             });
             if (noinv) {
