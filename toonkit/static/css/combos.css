@@ -12,6 +12,10 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }*/
+
+#main {
+  margin-bottom: 50px;
+}
 .main-content {
   max-width: 700px;
 }
