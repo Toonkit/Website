@@ -28,7 +28,7 @@ function initInvasions() {
                         `<div class="cog-card">
                           <h2 style="text-align: center;">${o.cogs_attacking}</h3>
                           <div class="cog-card-inner">
-                            <img draggable="false" class="cog" src="http://toonkit.net/static/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
+                            <img draggable="false" class="cog" src="https://toonkit.net/static/images/cogs/${o.cogs_attacking.toLowerCase().replace(/ /g,'_')}.png">
                             <div style="text-align: center; width: 100%;">
                               <h3>${o.name}</h3>
                               <p style="font-size:12px;">${o.count_total-o.count_defeated} / ${o.count_total} Cogs<br/>
@@ -50,7 +50,7 @@ function initInvasions() {
                 $("#noinv").hide();
                 // Use Cog silhouette image if regular image missing
                 $(".cog").on("error", function() {
-                    $(this).attr('src', 'http://toonkit.net/static/images/cogs/1_unknown_cog.png');
+                    $(this).attr('src', 'https://toonkit.net/static/images/cogs/1_unknown_cog.png');
                 });
             }
         }
