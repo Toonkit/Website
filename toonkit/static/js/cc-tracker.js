@@ -22,7 +22,8 @@ function initInvasions() {
             var data = JSON.parse(xhttp.responseText);
             var noinv = true;
             $.each(data, function(i, o) {
-                if (o.cogs_attacking != 'None' && Math.round(o.remaining_time)!=0) {
+                // if (o.cogs_attacking != 'None' && Math.round(o.remaining_time)!=0) {
+                if (o.cogs_attacking != 'None') {  // Mega invasions broke second condition check
                     noinv = false;
                     var newElement =
                         `<div class="cog-card">
