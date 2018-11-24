@@ -9,8 +9,8 @@ $(document).ready(function() {
 
 function updateStats() {
     $("#curinv").html('');
-    xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
-    //xhttp.open("GET", "https://corporateclash.net/api/v1/districts.js");
+    // xhttp.open("GET", "https://corporateclash.net/api/v1/districts?_=" + new Date().getTime(), true);
+    xhttp.open("GET", "https://corporateclash.net/api/v1/districts.js");
     xhttp.send();
     setInterval(() => updateStats(), 60000);
 }

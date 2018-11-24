@@ -23,7 +23,6 @@
           function makeActive(id){
             var label = document.getElementById(id).parentElement;
             label.classList.add("active"); //btn btn-outline-primary focus
-            console.log(id);
           }
         </script>
 
@@ -40,7 +39,6 @@
 
         <div id="row-2" class="btn-group-toggle" data-toggle="buttons">
           {% for subfield in form.sel_track %}
-            <script>console.log('{{ subfield.label.text }}')</script>
             <label class="btn btn-outline-primary {{ subfield.label.text }}">
               {{ subfield }} {{ subfield.label }}
               {% if subfield.checked %}
@@ -61,7 +59,6 @@
 
         <div id="row-3" class="btn-group-toggle" data-toggle="buttons">
           {% for subfield in form.sel_num_toons %}
-            <script>console.log('{{ subfield.label.text }}')</script>
             <label class="btn btn-outline-primary {{ subfield.label.text }}">
               {{ subfield }} {{ subfield.label }}
               {% if subfield.checked %}
