@@ -18,6 +18,10 @@ def staff():
 def speedrun_faq():
     return render_template('speedrunning-faq.html', title='Speedrun FAQ')
 
+@main.route("/speedrun-leaderboards", methods=['GET'])
+def speedrun_leaderboards():
+    return render_template('speedrun-leaderboards.html', title='Speedrun Leaderboards')
+
 # Custom 404
 @app.errorhandler(404)
 def page_not_found(e):
