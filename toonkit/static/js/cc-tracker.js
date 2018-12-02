@@ -37,11 +37,11 @@ function initInvasions() {
                             </div>
                           </div>
                         </div>`;
-                    // element.insertAdjacentHTML('beforeend', newElement);
+                    element.insertAdjacentHTML('beforeend', newElement);
                     // For testing purposes, duplicate elements to populate
-                    for (i=0; i < 1; i++) {
-                        element.insertAdjacentHTML('beforeend', newElement);
-                    }
+                    // for (i=0; i < 1; i++) {
+                    //     element.insertAdjacentHTML('beforeend', newElement);
+                    // }
                 }
             });
             if (noinv) {
