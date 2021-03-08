@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+/*@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');*/
+/*@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');*/
+
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+  background:#fafafa;
+}
+
+.my-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+h1, h2, h3 {
+  font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+  color: #b0081f;
+}
+
+h3 {
+  color: #264e9e;
+}
+
+code {
+  font-size: 87.5%;
+  color: #8f8f8f;
+  word-break: break-word;
+}
+
+#nav1, #nav2  {
+  margin-left: 120px;
+  margin-right: 20px;;
+}
+
+header div {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  background: #fafafa url("/assets/images/header-bg.jpg") 0 0 repeat-x;
+  padding-bottom: 30px;
+}
+
+header div img {
+  width: 40%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 370px;
+}
+
+/*Spacing Between Navbar Elements*/
+.navbar-nav > li {
+  /*margin-left:20px;
+  margin-right:20px;*/
+}
+
+.main-content {
+  max-width: 1000px;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px lightgrey;
+  background: #fdfdfd;
+}
+
+.main-content h1 {
+  font-size: 2.8em;
+  font-weight: normal;
+  color: #474747;
+  text-align: center;
+}
+
+.main-content h1:before {
+  padding-right: 0.2em;
+  margin-left: -1.2em;
+  color: #9ddcff;
+  content: "/";
+}
+
+.main-content h2:before {
+  padding-right: 0.2em;
+  margin-left: -1.2em;
+  color: #9ddcff;
+  content: "//";
+}
+
+/*.main-content h3:before {
+  padding-right: 0.2em;
+  margin-left: -1.2em;
+  color: #9ddcff;
+  content: "///";
+}*/
+
+.pad-left {
+  padding-left: 40px;
+}
+
+/*Let Javascript handle setting display for hiding and showing navbar links*/
+.cc {display: list-item;}
+.ttr {display: none;}
+
+#toonkit-logo {
+  position:absolute;
+  height:auto;
+  width:auto;
+  max-height:40px;
+  top: 30px;
+  left: 10px;
+  z-index: 1;
+}
+
+#cclogo {
+  position:absolute;
+  padding-left:2px;
+  height:auto;
+  width:auto;
+  max-height:75px;
+  top: 5px;
+  right: 150px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#ttrlogo {
+  position:absolute;
+  padding-left:2px;
+  height:auto;
+  width:auto;
+  max-height:90px;
+  top: -5px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*Grey Hover*/
+#cclogo:hover,
+#ttrlogo:hover {
+  /*-webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);*/
+  filter:drop-shadow(3px 3px 0 rgba(255, 255, 255, 0.67)) drop-shadow(-3px -3px 0 rgba(255, 255, 255, 0.67));
+}
+
+/*Yellow Clicked*/
+#cclogo:active,
+#ttrlogo:active {
+  filter:drop-shadow(3px 3px 0 rgba(255, 255, 0, 1)) drop-shadow(-3px -3px 0 rgba(255, 255, 0, 1));
+}
+
+/*White Selected*/
+#cclogo.selected,
+#ttrlogo.selected {
+  filter:drop-shadow(3px 3px 0 rgba(255, 255, 255, 0.85)) drop-shadow(-3px -3px 0 rgba(255, 255, 255, 0.85));
+}
+
+/*Alert icon as seen on CC Status and Tracker pages*/
+.alert {
+  padding: 2px;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 11px;
+  color: #FFFFFF;
+  background-color: #FF2323;
+}
+
+.alert-violet {
+    color: #FFFFFF;
+    background-color: blueviolet;
+    border-color: #FFFFFF;
+}
+
+/*Staff page*/
+.contributor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contributor > .main-content {
+  min-width: 70%;
+  margin-left: 2%;
+}
+.contributor > .main-content > h1 {
+  font-size: 2.2em;
+}
+
+.contributor > img {
+  vertical-align: middle;
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 170px;
+  max-width: 170px;
+}
+
+/*CC Invasion Tracker*/
+#noinv {
+  text-align: center;
+}
+
+#curinv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cog-card {
+  margin: 2%;
+  padding: 2%;
+  width: 45%;
+  box-shadow: 0px 0px 20px 2px lightgrey;
+  border-radius: 20px;
+  min-width: 340px;
+}
+
+img.cog {
+  margin-top: auto;
+  width: 90px;
+  height: 90px;
+}
+
+.cog-card-inner {
+  display: flex;
+  flex-direction: row;
+}
+
+/*CC Server Status*/
+#districts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.district-card {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  padding: 2%;
+  box-shadow: 0px 0px 20px 2px lightgrey;
+  border-radius: 20px;
+  width: 45%;
+  min-width: 350px;
+}
