@@ -1,0 +1,131 @@
+---
+layout: default
+title: Support
+---
+
+<div class="main-content">
+  <h1 class="pad-left"><a id="Toontown_Corporate_Clash_Technical_Issues_FAQ_0"></a>Corporate Clash Technical Issues FAQ</h1>
+  <p>Read this before posting about your issue in <code>#game-support</code>. The purpose of this document is to provide a central hub for common issues relating to Toontown: Corporate Clash, and how to solve them. To submit a solution, please create a <a href="https://github.com/Toonkit/Website">pull request</a> by editing the appropriate text with a description of how to fix the issue.</p>
+  <p>You may submit both questions and issues: for <strong>gameplay-related issues</strong>, please make sure that the issue is reproducable by other users before submitting a solution, and that it isn’t too obscure.</p>
+  <blockquote>
+      <p><strong>Credits:</strong> Vice#4812, Bin#7773</p>
+  </blockquote>
+  <div class="pad-left">
+    <h2><a id="unsupported-versions"></a>Unsupported Versions</h2>
+    <ul>
+        <li>
+            <p></p>
+            <div class="alert alert-note"><strong>Note</strong></div> Computers running on a <strong>32-bit version of Windows</strong> cannot play Corporate Clash. If you have a 32-bit copy of Windows, the game will <strong>not</strong> run. The minimum requirement to run Corporate Clash on Windows is a 64-bit Windows 7 with a Dual-Core processor and 4 GB of RAM, with Intel Integrated Graphics operating on at least 512MB of VRAM. The minimum requirement to run Corporate Clash on <strong>Mac</strong> is <a href="https://en.wikipedia.org/wiki/MacOS_Sierra">MacOS 10.12 Sierra</a>.
+            <p></p>
+        </li>
+        <li>
+            <p></p>
+            <div class="alert alert-note"><strong>Note</strong></div> <strong>Although computers running Windows 7 technically meet the minimum requirements, support for Windows 7 is currently broken and is being worked on. This section will be updated once this changes.</strong>
+            <p></p>
+        </li>
+        <li>
+            <p></p>
+            <div class="alert alert-note"><strong>Note</strong></div> Computers running <strong>Linux</strong> cannot play Corporate Clash.
+            <p></p>
+        </li>
+    </ul>
+    <h2><a id="technical"></a>Technical</h2>
+    <h3><a id="Q_What_are_C_VS2015_Redistributable_Packages_Where_do_I_install_Visual_Studio_Redistributable_Packages_How_do_I_fix_MVSCP140DLL__RUNTIMEDLL_were_not_found_18"></a><strong>Q:</strong> What are C++ VS2015 Redistributable Packages? Where do I install Visual Studio Redistributable Packages? How do I fix <code>MVSCP140.DLL / RUNTIME.DLL were not found</code>?</h3>
+    <blockquote>
+        <p>Visual C++ Redistributable Packages install runtime components of Visual C++ Libraries on a computer that does not have Visual C++ installed. The libraries are required to run applications that are developed by using the corresponding version of Visual C++.</p>
+    </blockquote>
+    <p><i class="fab fa-windows fa-1x" style="color:#1FAEFF"></i> This is required to play Corporate Clash. These packages can be downloaded on <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145">Microsoft’s official website</a>. Scroll down to <code>Visual Studio 2015</code> and follow the instructions. Both <code>.DLL</code> files are a part of the VS2015 Redistributable packages, and errors will be thrown if they either do not function, or do not exist.</p>
+    <h3><a id="Q_How_do_I_check_the_status_of_Corporate_Clash_24"></a><strong>Q:</strong> How do I check the status of Corporate Clash?</h3>
+    <p>When experiencing issues, it’s helpful to first <a href="https://status.corporateclash.net/">visit the Status page</a>. This describes if the services are experiencing any outages, or are running as expected. The services it reports on are the Main Game, the Website, and the Login API.</p>
+    <h3><a id="Q_I_tried_to_reinstall_Corporate_Clash_and_it_isnt_working_how_do_I_fix_this_28"></a><strong>Q:</strong> I tried to reinstall Corporate Clash and it isn’t working, how do I fix this?</h3>
+    <p><i class="fab fa-windows fa-1x" style="color:#1FAEFF"></i> Before you try to reinstall the game, delete all of the old files. Corporate Clash’s files can be found in the <code>C:\Program Files (x86)\Corporate Clash</code> directory on Windows. A broken, outdated version may be conflicting with the new installation if the files are not deleted, thus causing issues when trying to reinstall the game.</p>
+    <p>To completely ensure all leftover files are gone, please run the cleanup utility by downloading it from <a href="https://drive.google.com/file/d/1d6enIhrdy2cU71B1FNbqNUJFwMPtBFiv/view?usp=sharing">here</a>.</p>
+    <p>To install the game again, visit <a href="https://corporateclash.net/play">corporateclash.net/play</a></p>
+    <p><i class="fab fa-apple fa-1x" style="color:black"></i> To solve this problem on Mac:</p>
+    <ul>
+        <li><em>No support is available for this OS yet. Check back soon!</em></li>
+    </ul>
+    <h2><a id="launcher"></a>Launcher</h2>
+    <h3><a id="Q_When_I_click_play_in_the_launcher_its_stuck_on_Come_back_soon_and_nothing_launches_41"></a><strong>Q:</strong> When I click play in the launcher, it’s stuck on “Come back soon!” and nothing launches</h3>
+    <p><i class="fab fa-windows fa-1x" style="color:#1FAEFF"></i> To solve this problem on Windows:</p>
+    <ul>
+        <li>Open <code>Task Manager</code> by pressing <code>CTRL+SHIFT+ESC</code> or by accessing it from the <code>CTRL+ALT+DELETE</code> menu.</li>
+        <li>Try ending any current processes/instances of the launcher and/or client using <code>Task Manager</code> (<code>Clash Launcher</code>, <code>ccbstp</code>).</li>
+        <li>Try right clicking the launcher and clicking <code>Run as Administrator</code>, to override any permissions issues.</li>
+        <li>Try checking your antivirus or firewall to ensure that features of the launcher aren’t being blocked.</li>
+        <li>Try restarting your computer and reopening the launcher.</li>
+        <li>If none of the above work, try reinstalling the Corporate Clash launcher and game.</li>
+        <li>
+            <div class="alert alert-note"><strong>Note</strong></div> After uninstalling the game, run the uninstall utility <a href="https://drive.google.com/file/d/1d6enIhrdy2cU71B1FNbqNUJFwMPtBFiv/view?usp=sharing">here</a> to remove any excess files.</li>
+        <li>If none of the above work, try asking for further assistance in <code>#technology</code> with your computer information.</li>
+        <li>
+            <div class="alert alert-note"><strong>Note</strong></div> Ensure that you have the latest version of the game, and ensure that you have the C++ VS2015 Redistributable Packages.</li>
+        <li>
+            <div class="alert alert-note"><strong>Note</strong></div> If you can’t find either process, try switching to the “Details” tab of <code>Task Manager</code> and searching there</li>
+    </ul>
+    <p><i class="fab fa-apple fa-1x" style="color:black"></i> To solve this problem on Mac:</p>
+    <ul>
+        <li><em>No support is available for this OS yet. Check back soon!</em></li>
+    </ul>
+    <h3><a id="Q_My_launcher_isnt_opening_at_all_and_isnt_displaying_any_errors_What_gives_58"></a><strong>Q:</strong> My launcher isn’t opening at all, and isn’t displaying any errors! What gives?</h3>
+    <p><i class="fab fa-windows fa-1x" style="color:#1FAEFF"></i> To solve this problem on Windows:</p>
+    <ul>
+        <li>Run the Corporate Clash uninstaller to remove the game files</li>
+        <li>Delete the Corporate Clash folder in <code>C:\Program Files (x86)</code> (if it’s present)</li>
+        <li>Download and run the uninstall utility to completely remove all remaining CC files by clicking <a href="https://drive.google.com/file/d/1d6enIhrdy2cU71B1FNbqNUJFwMPtBFiv/view?usp=sharing">here</a></li>
+        <li>Reinstall the game (re-download from <a href="corporateclash.net/play">corporateclash.net/play</a>)</li>
+        <li>If none of the above work, try restarting your computer.</li>
+        <li>If none of the above work, try asking for further assistance in <code>#technology</code> with your computer information.</li>
+    </ul>
+    <p><i class="fab fa-apple fa-1x" style="color:black"></i> To solve this problem on Mac:</p>
+    <ul>
+        <li><em>No support is available for this OS yet. Check back soon!</em></li>
+    </ul>
+    <h3><a id="Q_Im_constantly_getting_A_Fatal_Error_occurred_while_downloading__a_new_version_of_the_launcher_Error_Code_1_when_I_try_to_launch_the_game_how_do_I_fix_this_71"></a><strong>Q:</strong> I’m constantly getting <code>A Fatal Error occurred while downloading a new version of the launcher. Error Code 1</code> when I try to launch the game, how do I fix this?</h3>
+    <p>Two instances of the launcher may be running simutaneously, and it cannot update.</p>
+    <p><i class="fab fa-windows fa-1x" style="color:#1FAEFF"></i> To solve this problem on Windows:</p>
+    <ul>
+        <li>Open <code>Task Manager</code></li>
+        <li>End all instances of <code>Clash Launcher</code></li>
+        <li>End all instances of <code>ccbstp</code></li>
+        <li>If the issue persists, restart your computer.</li>
+        <li>If the issue persists, reinstall the game.</li>
+        <li>
+            <div class="alert alert-note"><strong>Note</strong></div> After uninstalling the game, run the uninstall utility <a href="https://drive.google.com/file/d/1d6enIhrdy2cU71B1FNbqNUJFwMPtBFiv/view?usp=sharing">here</a> to remove any excess files.</li>
+        <li>
+            <div class="alert alert-note"><strong>Note</strong></div> If you can’t find either process, try switching to the “Details” tab of <code>Task Manager</code> and searching there</li>
+    </ul>
+    <p><i class="fab fa-apple fa-1x" style="color:black"></i> To solve this problem on Mac:</p>
+    <ul>
+        <li>Open <code>Activity Monitor</code></li>
+        <li>End all processes of <code>Clash Launcher</code></li>
+        <li>End all processes of <code>ccbstp</code></li>
+        <li>If the issue persists, restart your computer.</li>
+        <li>If the issue persists, reinstall the game.</li>
+    </ul>
+    <h2><a id="gameplay"></a>Gameplay</h2>
+    <h3><a id="Q_My_game_is_missing_some_files_how_do_I_fix_this_93"></a><strong>Q:</strong> My game is missing some files, how do I fix this?</h3>
+    <p>First, make sure that the version you are playing on is the most up-to-date version: the launcher automatically serves and handles updates. To update your game, you may close and reopen the launcher. If the issue persists, you must uninstall and then reinstall the game. This occurs when components might be missing in your game files, such as textures and models not appearing.</p>
+    <h3><a id="Q_My_game_says_that_my_internet_connection_to_the_servers_has_been_broken_but_my_internets_working_fine_Whats_going_wrong_97"></a><strong>Q:</strong> My game says that my internet connection to the servers has been broken, but my internet’s working fine! What’s going wrong?</h3>
+    <ul>
+        <li>Check <code>#announcements</code>, view <a href="https://twitter.com/CorpClashStatus/">@CorpClashStatus</a> on Twitter, or <a href="https://status.corporateclash.net/">visit the Status page</a> to see if there is currently a server outage.</li>
+        <li>If there is, you’ll have to wait for the Corporate Clash team to fix whatever issues they are encountering.</li>
+        <li>If there is no server outage and other people are still able to play, chances are the servers are overloaded and crashes will be very common until the number of current players/logins has dropped. Please note the only thing you can do in this situation is to keep trying or wait for the servers to be less stressed.</li>
+    </ul>
+    <h3><a id="Q_My_game_is_stuck_on_a_black_screen_What_happened_103"></a><strong>Q:</strong> My game is stuck on a black screen. What happened?</h3>
+    <p><i class="fab fa-windows fa-1x" style="color:#1FAEFF"></i> In some cases, going to a new location will give you a black screen. This error ranges from opening doors, to entering streets: anything that requires a new loading zone. The only way to fix this is by pressing <code>ALT+F4</code> in order to close the game, as your game is locked and nothing further will happen. This also works in any other cases where you are frozen and the game will not progress.</p>
+    <h3><a id="Q_My_game_is_stuck_on_a_black_screen_What_happened_103"></a><strong>Q:</strong> Help! I can't stop spinning!</h3>
+    <p> This error can be fixed by either holding <code>right click</code> and moving around <b>or by entering into a cog battle.</b>
+    </p>
+  </div>
+</div>
+
+<style>
+  body {
+    /*No Background image for now*/
+    
+    /*background-image: url("../static/images/dd.png");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+  }
+</style>
